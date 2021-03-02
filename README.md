@@ -1,2 +1,3 @@
-# My-Website
- My website that contains my project and articles
+# My Website
+ My website that contains my projects and articles   
+ Data Science, Maths and ideas.
