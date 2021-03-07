@@ -3,4 +3,4 @@
  Data Science, Maths and ideas.   
  In development.
  
- You can take a look at its most recent version [here](https://kenzobh.github.io/Kenzo-Website/index.html).
+ You can take a look at its most recent version [here (kenzobh.github.io)](https://kenzobh.github.io/).
