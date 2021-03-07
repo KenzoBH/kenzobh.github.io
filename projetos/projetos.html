@@ -4,44 +4,64 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Projetos de Ciência de Dados</title>
+    <link rel="stylesheet" href="projects-style.css">
+    <link rel="stylesheet" href="../style.css">
+    <title>Data Science</title>
 </head>
 <body>
 
-    <div id="up_block">
-        <a id="name_upper_left" href="../index.html"><strong>@KenzoBH</strong></a>
-        <ul id="upper_right">
-            <li><a class="item" href="../sobre-mim/sobre-mim.html">Sobre mim</a></li>
-            <li><a class="item" href="projetos.html">Projetos</a></li>
-            <li><a class="item" href="../artigos/artigos.html">Artigos</a></li>
+    <div id="header">
+        <a id="home" href="../index.html"><strong>@KenzoBH</strong></a>
+        <ul id="pages">
+            <li><a href="../sobre-mim/sobre-mim.html">Sobre</a></li>
+            <li style="color:#3DA5D9"><a href="projetos.html">Projetos</a></li>
+            <li><a href="../artigos/artigos.html">Artigos</a></li>
         </ul>
     </div>
 
     <div id="main">
-        <div id="head">
-            <h1>Ciência de Dados</h1>
-        </div>
+        <h1 id="title">Ciência de Dados</h1>
+        <p id="subtitle">Abaixo, encontram-se meus projetos relacionados à Ciência de Dados que desenvolvi e ando desenvolvendo. Habilidades como Análise Exploratória, Web Scraping e Machine Learning foram desenvolvidas.</p>
+        <p>Basta clicar em algum para ser direcionado para a página do projeto.</p>
+        
         <div id="projects">
-            <ol>
-
-                <div id="p02">
-                    <a href="machine-learning-twitter.html">
-                        <li class="proj">Twitter Bot for Machine Learning: Stock Predictions</li>
-                    </a>
-                    <p>Descrição do projeto 02</p>
-                </div>
-
-                <div id="p01">
-                    <a href="analise-exploratoria-enem.html">
-                        <li class="proj">Análise Exploratória de Dados do ENEM</li>
-                    </a>
-                    <p>Descrição do projeto 01</p>
-                </div>
-
+            <ol id="projects-list">
+    
+                <li class="project" id="p02">
+                    <div class="project-box">
+                        <div class="project-background" id="project-background-02">
+                        </div>
+                        <div class="project-title-and-description">
+                            <a class="project-link" href="https://twitter.com/RegressML">
+                                <h2>Predições de ações com Machine Learning no Twitter</h2>
+                                <p>Bot em Python que prevê fechamentos de ações. Inclusive, você pode pedir para ver as previsões das ações que você quiser na sua timeline do Twitter!</p>
+                                <dt>Mar 2021</dt>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+    
+                <li class="project" id="p01">
+                    <div class="project-box">
+                        <div class="project-background" id="project-background-01">
+                        </div>
+                        <div class="project-title-and-description">
+                            <a class="project-link" href="https://github.com/KenzoBH/Data-Science/blob/main/ENEM_R/ENEM_R.md">
+                                <h2>Análise Exploratória de dados do ENEM</h2>
+                                <p>Analisando e discutindo a respeito da desigualdade educacional no país por meio de dados do ENEM.</p>
+                                <dt>Fev 2021</dt>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+    
             </ol>
         </div>
+        
     </div>
 
+    <div id="footer">
+        <p>2021</p>
+    </div>
 </body>
 </html>

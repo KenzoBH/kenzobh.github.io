@@ -4,28 +4,119 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="about-me-style.css">
+    <link rel="stylesheet" href="../style.css">
     <title>Sobre mim</title>
 </head>
 <body>
 
-    <div id="up_block">
-        <a id="name_upper_left" href="../index.html"><strong>@KenzoBH</strong></a>
-        <ul id="upper_right">
-            <li><a class="item" href="sobre-mim.html">Sobre mim</a></li>
-            <li><a class="item" href="../projetos/projetos.html">Projetos</a></li>
-            <li><a class="item" href="../artigos/artigos.html">Artigos</a></li>
+    <div id="header">
+        <a id="home" href="../index.html"><strong>@KenzoBH</strong></a>
+        <ul id="pages">
+            <li style="color:#3DA5D9"><a href="sobre-mim.html">Sobre</a></li>
+            <li><a href="../projetos/projetos.html">Projetos</a></li>
+            <li><a href="../artigos/artigos.html">Artigos</a></li>
         </ul>
     </div>
 
     <div id="main">
-        <h1>Bruno Kenzo, 17</h1>
-        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit vitae quis quod expedita rerum. Culpa modi aut mollitia minus dignissimos adipisci laborum, quas quis officia, aperiam reprehenderit. Eligendi, necessitatibus cumque?</p>
-        <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio culpa laboriosam explicabo dolorem ex voluptates consequuntur debitis itaque eaque labore, fuga accusamus, facere temporibus tempora ratione eos quia at pariatur.</p>
-        <h2>Título 01</h2>
-        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae sed cum dignissimos asperiores, in minima adipisci! Iure fuga consectetur neque voluptate expedita. Fuga eos deleniti a perferendis deserunt. Veniam, assumenda?</p>
-        <h2>Título 02</h2>
-        <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit facere dignissimos sapiente consectetur facilis laborum, voluptatibus fugiat repellat, perspiciatis omnis officiis itaque cum nam. Dolorum accusamus sequi quia aut atque.</p>
+        <div id="start">
+            <h1 id="title">Bruno Kenzo, 17 anos</h1>
+            <div id="intro">
+                <div id="photo">
+                    <img src="../imgs/me.jpg" alt="Eu!" width="250" height="250" align="right">
+                </div>
+                <div id="text">
+                    <p>Esse site contém conteúdos relacionados a assuntos que eu gosto. Sobre ciência de dados, matemática, literatura, e afins.</p>
+                    <p>Aqui você vai encontrar meus projetos de Data Science que desenvolvo, utilizando Python, R e outras ferrramentas. Também alguns textos sobre matemática, o modelo educacional, entre outros papos interessantes :D</p>
+                    <p>Para entrar em contato comigo basta voltar à pagina inicial. Ali você encontra meu perfil profissional no GitHub e no LinkedIn. Ou pode seguir por esses links: <a href="https://github.com/KenzoBH">@KenzoBH</a> no Github, e <a href="https://www.linkedin.com/in/bruno-kenzo/">bruno-kenzo</a> no LinkedIn, mais fácil XD</p>
+                    <p>O site está em desenvolvimento por enquanto, (março de 2021), mas irei atualizando-o para estar em dia conforme minha vida profissional for evoluindo. Desenvolvo ele de forma individual, utilizando HTML e CSS.</p>
+                    <p>Abaixo, encontra-se algumas informações profissionais minhas. Enjoy!</p>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <div id="resume">
+            
+            <div id="formation">
+                <h2>Formação</h2>
+                <ol id="institutions">
+                    <li class="title">
+                        <h3 class="item">Técnico em Eletrônica</h3>
+                        <h4 class="institution">Liceu de Artes e Ofícios de São Paulo<ol class="time">
+                            <dt class="start">Jan/2018</dt>
+                            <dt class="end">Dez/2020</dt>
+                        </ol></h4>
+                        <p class="description">Curso técnico integrado ao Ensino Médio em período semi-integral. Trabalhados conceitos de álgebra booleana, programação de microcontroladores em linguagem C++ – além do desenvolvimento de um projeto programado em linguagem Python e C++ de programação, como Trabalho de Conclusão de Curso – entre outros conhecimentos específicos, abordados em aulas práticas e teóricas.</p>
+                        
+                    </li>
+                </ol>
+            </div>
+
+            <div id="experience">
+                <h2>Experiência</h2>
+                <ol>
+                    <li class="title">
+                        <h3 class="item">Apoio de Eletrônica para Projetos de Instrumentação Astronômica</h3>
+                        <h4 class="institution">IAG-USP<ol class="time">
+                            <dt class="start">Dez/2020</dt>
+                            <dt class="end">atual</dt>
+                        </ol></h4>
+                        <p class="description">Desenvolvimento do módulo SAMplus do telescópio SOAR com bolsa FAPESP, sob orientação e supervisão de profissionais.</p>
+                    </li>
+                    <li class="title">
+                        <h3 class="item">Estágio - Técnico em Eletrônica</h3>
+                        <h4 class="institution">ETEC Getúlio Vargas<ol class="time">
+                            <dt class="start">Mar/2020</dt>
+                            <dt class="end">Ago/2020</dt>
+                        </ol></h4>
+                        <p class="description">Estágio relacionado às instalações elétricas da Escola Técnica, com supervisão de profissionais experientes.</p>
+                        
+                    </li>
+                </ol>
+            </div>
+
+            <div id="others">
+                <h2>Extracurricularidades</h2>
+                <ul id="others-list">
+                    <li>
+                        <h3>HackerRank</h3>
+                        <p>Python Silver Star</p>
+                    </li>
+                    <li>
+                        <h3>Língua Inglesa</h3>
+                        <p>Avançada - desenvolvimento de documentação integral de projetos em inglês</p>
+                    </li>
+                    <li>
+                        <h3>Aulas particulares de Matemática</h3>
+                        <p>Projeto Autoral: @Exaticando</p>
+                    </li>
+                    <li>
+                        <h3>Pacote Office</h3>
+                        <p>PowerPoint avançado e Word e Excel básicos</p>
+                    </li>
+                    <li>
+                        <h3>Cursos</h3>
+                        <ul class="final-lists">
+                            <li>Data Science: R Basics; HarvardX</li>
+                            <li>Pandas; kaggle</li>
+                            <li>Data Cleaning; kaggle</li>
+                            <li>Intro to Machine Learning; kaggle</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>Bibliografias</h3>
+                        <ul class="final-lists">
+                            <li>R for Data Science; Hadley Wickham & Garrett Grolemund</li>
+                            <li>Como Mentir com Estatística; Darrel Huff</li>
+                            <li>Fundamentos de Matemática Elementar: Vols. 1, 2, 4, 5; Gelson Iezzi & outros autores</li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+         </div>
     </div>
 
     <div id="footer">

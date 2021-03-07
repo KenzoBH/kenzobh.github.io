@@ -1,0 +1,74 @@
+#start {
+    margin: 150px 10% 0 10%;
+}
+
+#photo img {
+    margin: 20px;
+    border-radius: 125px;
+    border-width: thin;
+    border-style: solid;
+    border-color: grey;
+}
+
+p {
+    text-align: justify;
+}
+
+hr {
+    margin: 50px;
+}
+
+#resume {
+    margin: 0px 10% 0 10%;
+}
+
+ol, ul#others-list {
+    list-style-type: none;
+    margin-left: -40px;
+}
+
+#title {
+    font-size: 250%;
+}
+
+h2 {
+    margin-top: 30px;
+    margin-bottom: 5px;
+    text-decoration: underline;
+}
+
+h3 {
+    margin-bottom: -15px;
+    text-decoration: underline;
+}
+
+h4 {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.time {
+    display: flex;
+    text-align: right;
+    color: grey;
+    font-size: 80%;
+}
+
+.time dt {
+    margin-inline: 5px;
+}
+
+.end {
+    text-align: right;
+}
+
+.description {
+    margin-left: 80px;
+    margin-bottom: 20px;
+}
+
+.final-lists {
+    margin-top: 20px;
+    list-style: none;
+}

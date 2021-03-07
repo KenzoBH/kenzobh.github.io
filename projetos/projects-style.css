@@ -1,0 +1,93 @@
+#project-background-02 {
+    background: url(imgs-projetos/project-02-box-image.jpg);
+}
+
+#project-background-01 {
+    background: url(imgs-projetos/project-01-box-image.jpg);
+}
+
+#main {
+    margin: 150px 20% 0 20%;
+}
+
+#title {
+    font-size: 250%;
+}
+
+#subtitle {
+    text-align: justify;
+}
+
+#projects {
+    width: auto;
+    height: 100%;
+}
+
+#projects-list {
+    padding: 0;
+    margin: 0;
+    margin-left: -15px;
+    text-align: center;
+}
+
+#projects-list li {
+    display: inline-block;
+}
+
+.project-box {
+    text-align: left;
+    margin: 10px;
+    width: 220px;
+    height: 300px;
+}
+
+.project-background {
+    width: auto;
+    height: 150px;
+    border-width: thin;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-color: grey;
+}
+
+.project-title-and-description {
+    width: auto;
+    height: auto;
+    padding: 10px;
+    overflow: hidden;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-width: thin;
+    border-style: solid;
+    border-color: grey;
+    background-color: white;
+}
+
+.project-title-and-description h2 {
+    font-size: 100%;
+    text-align: justify;
+}
+
+.project-title-and-description p {
+    font-size: 80%;
+    text-align: justify;
+}
+
+.project-title-and-description dt {
+    font-size: 60%;
+    color: #3DA5D9;
+}
+
+.project-link {
+    text-decoration: none;
+    color: black;
+}
+
+.project-title-and-description:hover {
+    text-decoration: underline;
+    background-color: #fafafa;
+}
+
+h2 {
+    text-align: justify;
+}
