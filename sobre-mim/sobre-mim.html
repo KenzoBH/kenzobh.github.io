@@ -4,20 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="about-me-style.css">
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../estilos/main-style.css">
+    <link rel="stylesheet" href="../estilos/about-me-style.css">
     <title>Sobre mim</title>
 </head>
 <body>
 
     <div id="header">
-        <a id="home" href="../index.html"><strong>@KenzoBH</strong></a>
-        <ul id="pages">
-            <li style="color:#3DA5D9"><a href="sobre-mim.html">Sobre</a></li>
-            <li><a href="../projetos/projetos.html">Projetos</a></li>
-            <li><a href="../artigos/artigos.html">Artigos</a></li>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+          <img src="../imgs/menu-icon.jpg" alt="menu icon">
+        </label>
+        <label id="home"><a href="../index.html">@KenzoBH</a></label>
+        <ul>
+          <li><a class="active" href="sobre-mim.html">Sobre</a></li>
+          <li><a href="../projetos/projetos.html">Projetos</a></li>
+          <li><a href="../artigos/artigos.html">Artigos</a></li>
         </ul>
-    </div>
+      </div>
 
     <div id="main">
         <div id="start">
@@ -83,7 +87,7 @@
                 <ul id="others-list">
                     <li>
                         <h3>HackerRank</h3>
-                        <p>Python Silver Star</p>
+                        <p><a style="color:#3DA5D9" href="https://www.hackerrank.com/brunokenzoh">Python Silver Star</a></p>
                     </li>
                     <li>
                         <h3>Língua Inglesa</h3>
@@ -91,7 +95,7 @@
                     </li>
                     <li>
                         <h3>Aulas particulares de Matemática</h3>
-                        <p>Projeto Autoral: @Exaticando</p>
+                        <p>Projeto Autoral: <a style="color:#3DA5D9" href="https://www.instagram.com/exaticando/">@Exaticando</a></p>
                     </li>
                     <li>
                         <h3>Pacote Office</h3>
@@ -117,10 +121,10 @@
                 </ol>
             </div>
          </div>
-    </div>
 
     <div id="footer">
-        <p>2021</p>
+        2021
+    </div>
     </div>
 
 </body>

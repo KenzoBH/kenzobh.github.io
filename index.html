@@ -4,31 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Bruno Kenzo :D</title>
+    <link rel="stylesheet" href="estilos/main-style.css">
+    <link rel="stylesheet" href="estilos/index-style.css">
+    <title>Bruno Kenzo</title>
 </head>
 <body>
 
     <div id="header">
-        <a id="home" href="index.html" style="color:#3DA5D9"><strong>@KenzoBH</strong></a>
-        <ul id="pages">
-            <li><a href="sobre-mim/sobre-mim.html">Sobre</a></li>
-            <li><a href="projetos/projetos.html">Projetos</a></li>
-            <li><a href="artigos/artigos.html">Artigos</a></li>
-        </ul>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <img src="imgs/menu-icon.jpg" alt="menu icon">
+      </label>
+      <label id="home"><a class="active" href="index.html">@KenzoBH</a></label>
+      <ul>
+        <li><a href="sobre-mim/sobre-mim.html">Sobre</a></li>
+        <li><a href="projetos/projetos.html">Projetos</a></li>
+        <li><a href="artigos/artigos.html">Artigos</a></li>
+      </ul>
     </div>
     
-    <div id="index-main">
-        <h1 id="index-title">Bruno Kenzo Hyodo</h1>
-        <p id="index-subtitle">a Data Scientist wannabe.</p>
-        <div id="index-social_medias">
+    <div id="main">
+        <h1 id="title">Bruno Kenzo Hyodo</h1>
+        <p id="subtitle">Data Scientist wannabe</p>
+        <div id="social-medias">
             <a href="https://github.com/KenzoBH" target="_blank"><img src="imgs/github-logo.png" alt="GitHub"></a>
             <a href="https://www.linkedin.com/in/bruno-kenzo/" target="_blank"><img src="imgs/linkedin-logo.png" alt="LinkedIn"></a>
         </div>
-    </div>
 
     <div id="footer">
-        <p>2021</p>
+      2021
+    </div>
     </div>
 
 </body>

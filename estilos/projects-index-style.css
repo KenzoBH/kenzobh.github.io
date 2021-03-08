@@ -1,21 +1,27 @@
+#main {
+    top: 70px;
+    right: 20%;
+    left: 20%;
+    position: absolute;
+}
+
 #project-background-02 {
-    background: url(imgs-projetos/project-02-box-image.jpg);
+    background: url(../imgs/project-02-box-image.jpg);
 }
 
 #project-background-01 {
-    background: url(imgs-projetos/project-01-box-image.jpg);
-}
-
-#main {
-    margin: 150px 20% 0 20%;
+    background: url(../imgs/project-01-box-image.jpg);
 }
 
 #title {
     font-size: 250%;
+    padding-top: 40px;
 }
 
-#subtitle {
+.subtitle {
     text-align: justify;
+    margin-bottom: 30px;
+    margin-top: 20px;
 }
 
 #projects {
@@ -66,11 +72,14 @@
 .project-title-and-description h2 {
     font-size: 100%;
     text-align: justify;
+    margin: 10px;
+    text-decoration: underline;
 }
 
 .project-title-and-description p {
     font-size: 80%;
     text-align: justify;
+    margin-bottom: 10px;
 }
 
 .project-title-and-description dt {
@@ -84,8 +93,9 @@
 }
 
 .project-title-and-description:hover {
-    text-decoration: underline;
-    background-color: #fafafa;
+    background-color: #3da5d96c;
+    transition: 0.5s;
+    font-size: 102%;
 }
 
 h2 {

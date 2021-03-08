@@ -1,0 +1,27 @@
+#main {
+    top: 70px;
+    right: 20%;
+    left: 20%;
+    position: absolute;
+    text-align: center;
+}
+
+#title {
+    margin-top: 20%;
+    margin-bottom: 10px;
+    transition: 0.5s;
+}
+
+#title:hover {
+    color: #3DA5D9;
+}
+
+#subtitle {
+    margin-bottom: 50px;
+}
+
+#social-medias a img:hover {
+    border-radius: 100%;
+    background-color: #3DA5D9;
+    transition: 0.2s;
+}
