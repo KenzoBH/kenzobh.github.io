@@ -1,11 +1,146 @@
+:root {
+    --main-color: #FFD140;
+}
+
+#header ul li a.active, #header a:hover {
+    background: var(--main-color);
+}
+
+#header ul li a:hover, #header ul li a.active {
+    background: var(--main-color);
+}
+
 #main {
-    top: 69px;
+    right: 5%;
+    left: 5%;
     position: absolute;
-    background-color: blue;
 }
 
 #banner {
-    background-color: aquamarine;
+    background: #000;
+    height: 350px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+    transition: 0.5s;
 }
 
-#banner p
+#banner:hover {
+    background-color: rgb(65, 65, 65);
+    transition: 0.5s;
+}
+
+#banner h1 {
+    padding-top: 100px;
+    color: #FFF;
+    font-size: 300%;
+}
+
+#banner p {
+    padding: 40px 10px 20px 10px;
+    color: #FFF;
+}
+
+#banner a {
+    background-color: var(--main-color);
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 10px;
+    transition: 0.2s;
+}
+
+#banner a:hover {
+    padding: 13px;
+    color: white;
+    background-color: black;
+    transition: 0.2s;
+}
+
+#intro {
+    background-color: var(--main-color);
+    padding: 40px 10px;
+}
+
+#intro ul {
+    align-items: center;
+    display: flex;
+    margin: auto;
+    text-align: center;
+    font-size: 80%;
+}
+
+#intro ul li {
+    padding: 0 10px;
+    margin: auto;
+    max-width: 30%;
+}
+
+#intro ul li:hover {
+    font-size: 102%;
+    transition: 0.5s;
+}
+
+#content {
+    margin: 20px 20%;
+}
+
+#content p {
+    line-height: 26px;
+}
+
+@media (max-width: 858px) {
+    #content {
+        margin: 20px 0px;
+    }
+}
+
+#content img {
+    max-width: 100%;
+    max-height: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: grey solid 1px;
+}
+
+#content h1 {
+    padding: 15px 0;
+}
+
+#content p {
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+#content p.highlight-text {
+    text-align: center;
+    margin: 10px 20px;
+}
+
+#content p.highlight-text:hover {
+    color: var(--main-color);
+    transition: 0.5s;
+}
+
+#content hr {
+    margin-top: 100px;
+}
+
+#content hr.title-row {
+    margin-top: -15px;
+    margin-bottom: 20px;
+}
+
+#summary-list li {
+    margin: 10px;
+}
+
+#summary-list li a {
+    color: black;
+}

@@ -25,6 +25,7 @@ h1:hover {
     border-width: thin;
     border-style: solid;
     border-color: grey;
+    align-items: center;
 }
 
 p {

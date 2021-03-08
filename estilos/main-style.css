@@ -4,7 +4,7 @@
     list-style: none;
     box-sizing: border-box;
     font-family: "Segoe UI";
-  }
+}
 
 #header {
     background: #fafafa;
@@ -79,7 +79,7 @@
         position: fixed;
         width: 100%;
         height: 100vh;
-        background: #fafaface;
+        background: #fafafaf6;
         top: 70px;
         left: 100%;
         text-align: center;
