@@ -1,12 +1,18 @@
-#main {
-    top: 70px;
-    right: 20%;
-    left: 20%;
-    position: absolute;
-}
 
 #start {
     margin: 50px 10% 0 10%;
+}
+
+@media (max-width: 858px) {
+    #main {
+        margin: 0 -15px 0 -15px;
+    }
+    #start {
+        margin: 0 -15px 0 -15px;
+    }
+    #resume {
+        margin: 0 -15px 0 -15px;
+    }
 }
 
 h1 { 
