@@ -11,6 +11,10 @@
     padding-top: 40px;
 }
 
+#title:hover {
+    color: var(--blue)
+}
+
 .subtitle {
     text-align: justify;
     margin-bottom: 30px;
@@ -76,8 +80,9 @@
 }
 
 .project-title-and-description dt {
+    font-family: var(--font3);
     font-size: 60%;
-    color: #3DA5D9;
+    color: var(--blue);
 }
 
 .project-link {
@@ -86,11 +91,11 @@
 }
 
 .project-title-and-description:hover {
-    background-color: #3da5d96c;
     transition: 0.5s;
     font-size: 102%;
 }
 
 h2 {
+    font-family: var(--font2);
     text-align: justify;
 }

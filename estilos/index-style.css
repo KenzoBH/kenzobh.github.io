@@ -13,7 +13,7 @@
 }
 
 #title:hover {
-    color: #3DA5D9;
+    color: var(--blue);
 }
 
 #subtitle {
@@ -22,6 +22,6 @@
 
 #social-medias a img:hover {
     border-radius: 100%;
-    background-color: #3DA5D9;
+    background-color: var(--blue);
     transition: 0.2s;
 }

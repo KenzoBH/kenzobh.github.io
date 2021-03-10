@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="../estilos/projects-machine-learning-twitter.css">
     <link rel="shortcut icon" href="../imgs/favicon.ico" type="image/x-icon">
     <title>Regress Bot</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Oswald:wght@700&family=Roboto:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -27,8 +29,8 @@
     <div id="main">
 
         <div id="banner">
-            <h1>Regress</h1>
-            <p>Um bot no Twitter que publica previsões de um time de 8 modelos sobre ações</p>
+            <h1>REGRESS</h1>
+            <p>Um bot no Twitter que publica previsões de um time de 7 modelos sobre ações</p>
             <a href="https://twitter.com/home" target="_blank">@RegressML</a>
         </div>
 
@@ -40,7 +42,7 @@
                 </li>
                 <li>
                     <h2>Machine Learning</h2>
-                    <p>Treino de 8 modelos de regressão para a previsão dos fechamentos</p>
+                    <p>Treino de 7 modelos de regressão para a previsão dos fechamentos</p>
                 </li>
                 <li>
                     <h2>Twitter API</h2>
@@ -52,7 +54,7 @@
         <div id="content">
             <h1>Um bot?! Não brinca com isso aí, Kenzo!</h1>
             <hr class="title-row">
-            <p>O @RegressML é uma conta do Twitter que trabalha sozinha. Olha que legal: se você mencionar o arroba do time de 8 modelos em um tweet, eles vão curtir seu post! Mais adiante, a gente vai discutir outras interações interessantes que esse bot consegue fazer com você.</p>
+            <p>O @RegressML é uma conta do Twitter que trabalha sozinha. Olha que legal: se você mencionar o arroba do time de 7 modelos em um tweet, eles vão curtir seu post! Mais adiante, a gente vai discutir outras interações interessantes que esse bot consegue fazer com você.</p>
             <p class="highlight-text"><strong title="Sem #sdv hoje">Ele não vai te seguir de volta, tá :)</strong> (talvez um dia eu deixe ele te seguir, rs)</p>
             <p>E sim, Regress é um bot! E não tem nenhum problema nisso - inclusive, o Twitter disponibiliza ferramentas pra que eu e você possamos fazer o nosso botzinho. A gente viu muitas notícias sobre os bots das redes sociais uns tempos atrás - principalmente na época eleitoral. E a fama deles não ficou tão boa assim, porque eles estavam sendo utilizados para intuitos "não tão corretos" (como dissemininação de fake news).</p>
             <picture>
@@ -78,7 +80,7 @@
             <h1 id="li-01">1. Resumo</h1>
             <hr class="title-row">
             <p>Basicamente, o bot contém uma lista de ações que ele deve publicar as previsões - e você pode cadastrar uma se você tiver uma conta no Twitter, olha que legal! E todo dia, às 8h da manhã, ele vai na internet e busca os dados históricos de todas as ações cadastradas.</p>
-            <p>Com esses dados, o time faz umas mágicas matemáticas - coisas do tipo: "ah, essa ação quando abre nesse valor, tende a fechar nesse" -, e produz 8 previsões para o fechamento do dia para cada ação. A gente vai discutir a bruxaria mais pra frente. Depois disso, a eles publicam os 3 fechamentos mais confiáveis na conta do Twitter.</p>
+            <p>Com esses dados, o time faz umas mágicas matemáticas - coisas do tipo: "ah, essa ação quando abre nesse valor, tende a fechar nesse" -, e produz 7 previsões para o fechamento do dia para cada ação. A gente vai discutir a bruxaria mais pra frente. Depois disso, a eles publicam os 3 fechamentos mais confiáveis na conta do Twitter.</p>
 
             <h1 id="li-02">2. Os dados: de onde vêm?</h1>
             <hr class="title-row">
@@ -100,17 +102,16 @@
             <h1 id="li-03">3. O time: quem são?</h1>
             <hr class="title-row">
             <p>Agora vêm os bruxos.</p>
-            <p>Regress é um time de 8 modelos. Um modelo é - de forma rasa, ok? - um objeto que recebe valores e, com base nesses valores que ele recebeu, retorna um outro, seguindo certas regras - bem parecido com uma função matemática. Porém, a gente pode treinar um modelo, de forma que ele consiga fazer previsões. No nosso caso, um modelo deve receber valores referentes aos dados de ontem (abertura, preço máximo, etc.) e retornar o valor de fechamento de hoje. E ele vai retornar esse valor com base nos dados históricos dessa ação.</p>
+            <p>Regress é um time de 7 modelos. Um modelo é - de forma rasa, ok? - um objeto que recebe valores e, com base nesses valores que ele recebeu, retorna um outro, seguindo certas regras - bem parecido com uma função matemática. Porém, a gente pode treinar um modelo, de forma que ele consiga fazer previsões. No nosso caso, um modelo deve receber valores referentes aos dados de ontem (abertura, preço máximo, etc.) e retornar o valor de fechamento de hoje. E ele vai retornar esse valor com base nos dados históricos dessa ação.</p>
             <p>E cada modelo encontra padrões nesses dados de uma forma diferente. Existem diversos modelos por aí, mas o time conta com:</p>
             <p class="highlight-text"><strong>Satoshi Gaara Daisuke, aka SGD 🙇🏼‍♂️</strong></p>
             <p class="highlight-text"><strong>Rodrigo Regis, aka Ridge 🧙‍♂️</strong></p>
             <p class="highlight-text"><strong>Sophia Victoria Resende, aka SVR 🙆🏻‍♀️</strong></p>
             <p class="highlight-text"><strong>Karenn Neves, aka KNN 🏄🏻‍♀️</strong></p>
-            <p class="highlight-text"><strong>De Trevis, aka DT 👨🏼‍🌾</strong></p>
             <p class="highlight-text"><strong>Rannah dom Fontes 👩‍💻</strong></p>
             <p class="highlight-text"><strong>Ada Borges, aka Ada 🧝🏼</strong></p>
             <p class="highlight-text"><strong>Neuson Net, aka NN 🤖</strong></p>
-            <p>Se você entende um pouco mais de Machine Learning e afins, os modelos são Stochastic Gradient Descent, Ridge Regression, Linear Suppor Vector Regressor, K-Nearest Neighbors, Decision Tree, Random Forest, Ada Boost e Neural Networks.</p>
+            <p>Se você entende um pouco mais de Machine Learning e afins, os modelos são Stochastic Gradient Descent, Ridge Regression, Linear Support Vector Regressor, K-Nearest Neighbors, Decision Tree, Random Forest, Ada Boost e Neural Networks.</p>
             <p>Cada um recebe os dados do Yahoo Finance, entendem como os dados influenciam no fechamento do dia seguinte</p>
             <p class="highlight-text"><strong>Mas esses modelos são bons? Posso guiar meus investimentos por eles?</strong></p>
             <p>Os modelos têm tido um resultado superior a uma métrica forte de base que eu adotei - a previsão do fechamento de hoje ser igual ao fechamento de ontem. Essa métrica erra mais que os modelos.</p>
@@ -132,7 +133,7 @@
 
             <h1 id="li-05">5. Outros bots pra nós :D</h1>
             <hr class="title-row">
-            <ul>
+            <ul id="last-list">
                 <li><h3><a href="https://twitter.com/this_vid/" target="_blank">@this_vid</a></h3></li>
                 <p>Você pode usar esse bot no Twitter para baixar um vídeo que você achou legal por lá <br>Só mencionar o perfil dele em um vídeo no Twitter e ele te manda pra um link pra você fazer o download do vídeo. Olha que daora!</p>
                 <li><h3><a href="https://twitter.com/DolarBipolar/" target="_blank">@DolarBipolar</a></h3></li>

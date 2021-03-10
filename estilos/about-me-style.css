@@ -3,7 +3,7 @@
     margin: 50px 10% 0 10%;
 }
 
-@media (max-width: 858px) {
+@media (max-width: 800px) {
     #main {
         margin: 0 -15px 0 -15px;
     }
@@ -21,8 +21,7 @@ h1 {
 }
 
 h1:hover {
-    color: #3DA5D9;
-    transition: 0.2s;
+    color: var(--blue);
 }
 
 #photo img {
@@ -47,16 +46,19 @@ ol, ul#others-list {
 }
 
 h2 {
+    font-family: var(--font1);
     margin-top: 30px;
     margin-bottom: 10px;
     text-decoration: underline;
 }
 
 h3 {
+    font-family: var(--font2);
     margin-top: 10px;
 }
 
 h4 {
+    font-family: var(--font3);
     margin-bottom: 20px;
     display: flex;
     justify-content: space-between;
@@ -84,4 +86,5 @@ h4 {
 
 .final-lists {
     list-style: none;
+    font-family: var(--font3);
 }

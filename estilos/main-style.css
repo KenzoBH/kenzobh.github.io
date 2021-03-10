@@ -1,13 +1,21 @@
+:root {
+    --blue: #4392f1;
+    --grey: #fafafa;
+    --font1: "Oswald";
+    --font2: "Montserrat";
+    --font3: "Roboto";
+}
+
 * {
     padding: 0;
     margin: 0;
     list-style: none;
     box-sizing: border-box;
-    font-family: "Segoe UI";
 }
 
 #header {
-    background: #fafafa;
+    font-family: var(--font2);
+    background: var(--grey);
     position: fixed;
     height: 70px;
     width: 100%;
@@ -45,7 +53,7 @@
 
 #header ul li a.active, #header a:hover {
     color: white;
-    background: #3DA5D9;
+    background: var(--blue);
     transition: 0.5s;
 }
 
@@ -93,7 +101,7 @@
     }
     #header ul li a:hover, #header ul li a.active {
         color: white;
-        background: #3DA5D9;
+        background: var(--blue);
     }
     #check:checked ~ ul {
       left: 0;
@@ -108,8 +116,17 @@
     position: absolute;
 }
 
+#main h1 {
+    font-family: var(--font1)
+}
+
+#main p {
+    font-family: var(--font3)
+}
+
 #footer {
-    margin: 100px;
+    font-family: var(--font2);
+    margin: 100px 0;
     text-align: center;
     color: grey;
 }
