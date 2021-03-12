@@ -20,14 +20,6 @@
     background-size: cover;
 }
 
-@media (min-width: 700px) {
-    #banner{
-        background: black;
-        background-position: center center;
-        background-size: cover;
-    }
-}
-
 #banner a {
     color: white;
     transition: 0.2s
@@ -77,8 +69,7 @@
         width: 50%;
         padding-left: 7.5%;
         padding-right: 7.5%;
-        padding-top: 7%;
-        padding-bottom: 4%;
+        padding-top: 10%;
     }
 
         #banner #banner-title h1 {
@@ -93,20 +84,10 @@
             font-family: var(--font3);
         }
 
-        #banner #banner-title a {
-            color: var(--blue)
-        }
-
-        #banner #banner-title a:hover {
-            color: white;
-            text-decoration: underline;
-        }
-
         @media (max-width: 800px) {
             #banner #banner-title {
                 height: 290px;
                 padding-top: 20%;
-                padding-bottom: 10%;
             }
 
             #banner #banner-title h1 {
@@ -154,63 +135,89 @@
                 }
             }
 
-#slider {
-    width: 100%;
-    overflow: hidden;
-    position: relative;
+#posts-list {
+    background: #070707;
+    display: flex;
+    padding-top: 100px;
+    padding-bottom: 80px;
+    color: white;
 }
 
-    #navigation {
-        position: absolute;
-        bottom: 30px;
-        left: 50%;
-        transform: translateX(-50%);
-        display: flex;
+    #posts-list .title {
+        width: 50%;
+        line-height: 25px;
+        margin-left: 60px;
     }
 
-        .bar {
-            width: 100px;
-            height: 20px;
-            border: 2px solid white;
-            margin: 10px;
-            cursor: pointer;
-            transition: 0.4s;
-        }
+        #posts-list .title h2 {
+            padding-top: 20px;
+            font-family: var(--font1);
+        } 
 
-        .bar:hover {
-            background: white;
-        }
-                
-    input[name="r"] {
-        position: absolute;
-        visibility: hidden;
+    #posts-list .list {
+        margin-right: 80px;
+        text-align: justify; 
     }
 
-    #r1:checked ~ .s1 {
-        margin-left: 0;
-    }
-    #r2:checked ~ .s1 {
-        margin-left: -20%;
-    }  
-
-        .slides{
-            width: 500%;
-            height: 100%;
-            display: flex;
+        #posts-list .list li {
+            background-color: black;
+            border-radius: 10px;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+            padding: 20px;
         }
-                
-            .slide {
-                width: 20%;
-                transition: 0.4s;
+
+            #posts-list .list li h3 {
+                font-family: var(--font2);
+                color: white;
+                text-decoration: underline;
+                font-size: 150%;
+                transition: 0.2s;
+                margin-bottom: 10px;
+                text-align: left;
             }
 
-            .slide img {
-                width: 100%;
-                height: 100%;
+            #posts-list .list li h3:hover {
+                color: var(--blue);
             }
+
+            #posts-list .list li p {
+                font-family: var(--font3);
+                color: white;
+            }
+
+            #posts-list .list li p a {
+                color: var(--blue);
+                transition: 0.2s;
+            }
+            
+
+    #posts-list .list {
+        width: 50%;
+    }
+
+    @media (max-width: 800px) {
+        #posts-list {
+            display: block;
+        }
+        
+        #posts-list .title {
+            width: 80%;
+            margin-bottom: 20px;
+            margin-left: 30px;
+        }
+        
+        #posts-list .list {
+            width: 100%;
+        }
+
+            #posts-list .list ul {
+                padding: 0 30px;
+            }
+    }
 
 #footer {
-    background: #070707;
+    background: black;
     height: 50px;
     text-align: center;
     padding-top: 25px;

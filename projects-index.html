@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,7 +19,7 @@
                 <ul id="menu">
                     <li><a href="sobre.html">Sobre</a></li>
                     <li><a  style="color: var(--blue);"  href="">Projetos</a></li>
-                    <li><a href="">Posts</a></li>
+                    <li><a href="posts.html">Posts</a></li>
                 </ul>
             </div>
         </header>
@@ -40,20 +40,31 @@
     </div>
 
     <div id="slider">
-        <figure>
+        <div class="slides">
+          <input type="radio" name="r" id="r1" checked>
+          <input type="radio" name="r" id="r2">
+          <div class="slide s1">
             <a href="projects/Regress-Twitter-Bot.html">
                 <picture>
-                    <source media="(max-width: 700px)" srcset="images/project-01-box-image-mobile.jpg" type="image/jpg">
-                    <img src="images/project-01-box-image.jpg" alt="">
+                    <source media="(max-width: 700px)" srcset="images/project-02-image-mobile.jpg" type="image/jpg">
+                    <img src="images/project-02-image.jpg" alt="">
                 </picture>
             </a>
-            <a href="https://github.com/KenzoBH/Data-Science/blob/main/ENEM_Python/ENEM_by_school_EDA_Python.ipynb">
+          </div>
+          <div class="slide">
+            <a href="https://github.com/KenzoBH/Data-Science/blob/main/ENEM_Python/ENEM_by_school_EDA_Python.ipynb" target="_blank">
                 <picture>
-                    <source media="(max-width: 700px)" srcset="images/project-02-box-image-mobile.jpg" type="image/jpg">
-                    <img src="images/project-02-box-image.jpg" alt="">
+                    <source media="(max-width: 700px)" srcset="images/project-01-image-mobile.jpg" type="image/jpg">
+                    <img src="images/project-01-image.jpg" alt="">
                 </picture>
             </a>
-        </figure>
+          </div>
+        </div>
+  
+        <div id="navigation">
+          <label for="r1" class="bar"></label>
+          <label for="r2" class="bar"></label>
+        </div>
     </div>
 
     <div id="footer">
