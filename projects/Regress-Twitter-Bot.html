@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/regress-twitter-bot.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Oswald:wght@700&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div id="banner">
+        <header>
+            <div id="home">
+                <a href="../index.html">@KenzoBH</a>
+            </div>
+            <div>
+                <ul id="menu">
+                    <li><a href="../sobre.html">Sobre</a></li>
+                    <li><a style="color: var(--blue);" href="../projects-index.html">Projetos</a></li>
+                    <li><a href="">Posts</a></li>
+                </ul>
+            </div>
+        </header>
+        <div id="banner-title">
+            <h1>REGRESS</h1>
+            <p>Um bot no Twitter que publica previsões de um time de 7 modelos sobre ações
+            </p>
+            <a href="">@RegressML</a>
+        </div>
+        <footer>
+            <ul>
+                <li><a href="https://github.com/KenzoBH" target="_blank"><p>GitHub</p>/KenzoBH</a></li>
+                <li><a href="mailto:brunokenzoh@gmail.com">brunokenzoh@gmail.com</a></li>
+                <li><a href="https://www.linkedin.com/in/bruno-kenzo/" target="_blank"><p>LinkedIn</p>/bruno-kenzo</a></li>
+            </ul>
+        </footer>
+    </div>
+
+    <div id="intro">
+        <ul>
+            <li>
+                <h2>Web Scraping</h2>
+                <p>Aquisição diária de dados do Yahoo Finance</p>
+            </li>
+            <li>
+                <h2>Machine Learning</h2>
+                <p>Treino de 7 modelos de regressão para a previsão dos fechamentos</p>
+            </li>
+            <li>
+                <h2>Twitter API</h2>
+                <p>Postagem das previsões no Twitter</p>
+            </li>
+        </ul>
+    </div>
+
+    <div id="content">
+        <h1>Um bot?! Não brinca com isso aí, Kenzo!</h1>
+        <hr class="title-row">
+        <p>O @RegressML é uma conta do Twitter que trabalha sozinha. Olha que legal: se você mencionar o arroba do time de 7 modelos em um tweet, eles vão curtir seu post! Mais adiante, a gente vai discutir outras interações interessantes que esse bot consegue fazer com você.</p>
+        <p class="highlight-text"><strong title="Sem #sdv hoje">Ele não vai te seguir de volta, tá :)</strong> (talvez um dia eu deixe ele te seguir, rs)</p>
+        <p>E sim, Regress é um bot! E não tem nenhum problema nisso - inclusive, o Twitter disponibiliza ferramentas pra que eu e você possamos fazer o nosso botzinho. A gente viu muitas notícias sobre os bots das redes sociais uns tempos atrás - principalmente na época eleitoral. E a fama deles não ficou tão boa assim, porque eles estavam sendo utilizados para intuitos "não tão corretos" (como dissemininação de fake news).</p>
+        <picture>
+            <source media="(max-width: 858px)" srcset="../images/twitter-print-mobile.jpg" type="image/jpg">
+            <img src="../images/twitter-print-desktop.jpg" alt="@RegressML Twitter account">
+        </picture>
+        <p>Mas os bots podem ser utilizados para automatizar processos "de boa índole". Que é o caso do nosso time!</p>
+        <p>Aqui, você vai entender um pouco como ele funciona, os resultados dele, e como você pode ganhar com isso. Para mais detalhes, aqui está o link do GitHub (site em que programadores hospedam seus códigos e documentações mais específicas) desse projeto: <a href="https://github.com/KenzoBH/Data-Science/tree/main/Twitter_ML" target="_blank">clique aqui</a>. (It's in English, huh).</p>
+        <p>No final dessa página, eu deixei link de outros bots legais - e úteis! - no Twitter pra que você possa dar uma olhada, e se tiver uma conta, seguir eles também :D</p>
+        <p class="highlight-text">Let's go!</p>
+        <p style="text-align: justify; margin-right: 30%; margin-top: 50px;"><em>Antes de a gente continuar, uma observação: esse projeto não visa criar um bot que sirva para guiar investimentos. Apenas a criação de uma aplicação de Ciência de Dados no cotidiano, para facilitar nossa vida - desde a coleta de dados da internet e criação de modelos que fazem boas previsões até a divulgação dos resultado em um meio de fácil acesso. That's it.</em></p>
+
+        <h1>Sumário</h1>
+        <hr class="title-row">
+        <ol id="summary-list">
+            <li>1. <a href="#li-01">Resumo</a></li>
+            <li>2. <a href="#li-02">Os dados: de onde vêm?</a></li>
+            <li>3. <a href="#li-03">O time: quem são?</a></li>
+            <li>4. <a href="#li-04">O bot: o que faz?</a></li>
+            <li>5. <a href="#li-05">Outros bots pra nós :D</a></li>
+        </ol>
+
+        <h1 id="li-01">1. Resumo</h1>
+        <hr class="title-row">
+        <p>Basicamente, o bot contém uma lista de ações que ele deve publicar as previsões - e você pode cadastrar uma se você tiver uma conta no Twitter, olha que legal! E todo dia, às 8h da manhã, ele vai na internet e busca os dados históricos de todas as ações cadastradas.</p>
+        <p>Com esses dados, o time faz umas mágicas matemáticas - coisas do tipo: "ah, essa ação quando abre nesse valor, tende a fechar nesse" -, e produz 7 previsões para o fechamento do dia para cada ação. A gente vai discutir a bruxaria mais pra frente. Depois disso, a eles publicam os 3 fechamentos mais confiáveis na conta do Twitter.</p>
+
+        <h1 id="li-02">2. Os dados: de onde vêm?</h1>
+        <hr class="title-row">
+        <p>Como eu disse, ele pega os dados da internet. Mais especificamente, ele vai buscar no site do Yahoo Finance.</p>
+        <p>Esse é o site de onde vem os dados:</p>
+        <picture>
+            <source media="(max-width: 858px)" srcset="../images/yahoo-finance-mobile.jpg" type="image/jpg">
+            <img src="../images/yahoo-finance-desktop.jpg" alt="Yahoo Finance website">
+        </picture>
+        
+        <p>Como dá pra ver na foto, o Yahoo Finance contém uma tabela com os dados históricos de cada ação. E contém as seguintes colunas: preço que ação estava valendo no início do dia, maior preço que ela chegou no dia, menor preço que ela chegou no dia, preço que ela fechou no dia e o volume de capital movimentado por essa ação  naquele dia.</p>
+        <p class="highlight-text"><strong>Como que eu pego esses dados aí?</strong></p>
+        <p>A gente pode simplesmente clicar em "download" lá no site, e ele baixa uma planilha do Excel, e pronto. Mas eu não optei por fazer isso. Já que o nosso bot tweeta previsões todos os dias, ficar baixando tabelas todos os dias ia gastar muita memória, e a gente teria que ficar deletando arquivos depois de certo tempo.</p>
+        <p>Então, a gente simplesmente utiliza uma linha de código - agradeça todas as noites aos desenvolvedores da biblioteca "pandas", por gentileza - que transforma essa tabela em um objeto pro nosso programa trabalhar, sem baixar nada. Amém.</p>
+        <p>O que a gente quer é o seguinte: com base nos dados de ontem (quanto abriu, quanto fechou, etc.), saber quanto que ela vai fechar hoje.</p>
+        <p class="highlight-text"><strong>Como que a gente faz isso?</strong></p>
+        <p>Resposta: bruxaria - ou quase isso. Bora falar sobre isso agora.</p>
+
+        <h1 id="li-03">3. O time: quem são?</h1>
+        <hr class="title-row">
+        <p>Agora vêm os bruxos.</p>
+        <p>Regress é um time de 7 modelos. Um modelo é - de forma rasa, ok? - um objeto que recebe valores e, com base nesses valores que ele recebeu, retorna um outro, seguindo certas regras - bem parecido com uma função matemática. Porém, a gente pode treinar um modelo, de forma que ele consiga fazer previsões. No nosso caso, um modelo deve receber valores referentes aos dados de ontem (abertura, preço máximo, etc.) e retornar o valor de fechamento de hoje. E ele vai retornar esse valor com base nos dados históricos dessa ação.</p>
+        <p>E cada modelo encontra padrões nesses dados de uma forma diferente. Existem diversos modelos por aí, mas o time conta com:</p>
+        <p class="highlight-text"><strong>Satoshi Gaara Daisuke, aka SGD 🙇🏼‍♂️</strong></p>
+        <p class="highlight-text"><strong>Rodrigo Regis, aka Ridge 🧙‍♂️</strong></p>
+        <p class="highlight-text"><strong>Sophia Victoria Resende, aka SVR 🙆🏻‍♀️</strong></p>
+        <p class="highlight-text"><strong>Karenn Neves, aka KNN 🏄🏻‍♀️</strong></p>
+        <p class="highlight-text"><strong>Rannah dom Fontes 👩‍💻</strong></p>
+        <p class="highlight-text"><strong>Ada Borges, aka Ada 🧝🏼</strong></p>
+        <p class="highlight-text"><strong>Neuson Net, aka NN 🤖</strong></p>
+        <p>Se você entende um pouco mais de Machine Learning e afins, os modelos são Stochastic Gradient Descent, Ridge Regression, Linear Support Vector Regressor, K-Nearest Neighbors, Decision Tree, Random Forest, Ada Boost e Neural Networks.</p>
+        <p>Cada um recebe os dados do Yahoo Finance, entendem como os dados influenciam no fechamento do dia seguinte</p>
+        <p class="highlight-text"><strong>Mas esses modelos são bons? Posso guiar meus investimentos por eles?</strong></p>
+        <p>Os modelos têm tido um resultado superior a uma métrica forte de base que eu adotei - a previsão do fechamento de hoje ser igual ao fechamento de ontem. Essa métrica erra mais que os modelos.</p>
+        <p>Porém, não guie seus investimentos por nenhum robô na internet. Você pode utilizá-los como referência, mas não como tomadores de decisão.</p>
+
+        <h1 id="li-04">O bot: o que faz?</h1>
+        <hr class="title-row">
+        <p>O bot é extremamente disciplinado. Todo dia - exceto fins de semana (ninguém é de ferro) - às 8h da manhã são publicadas as previsões, que como já disse, são baseadas em dados que os Regresses buscam lá no site do Yahoo e encontram os dados históricos, e depois entendem a relação entre os números, publicando suas previsões no Twitter.</p>
+        <p class="highlight-text"><strong>Quais ações eles publicam previsões?</strong></p>
+        <p>Você mesmo pode perguntar pra eles lá no Twitter! Na conta, está um tweet fixado explicando como você pode ver a lista de ações cadastradas.</p>
+        <p>É simples: basta fazer um tweet marcando o bot, e depois a palavra "lista", sem aspas. Assim:</p>
+        <p class="highlight-text">@RegressML lista</p>
+        <p>Assim que você tweetar, eles curtem seu tweet - porque like é bom e todo mundo gosta - e te responde com a lista das ações que ele já publica previsões.</p>
+        <p>E você pode pedir pra eles publicarem previsões das ações que você quiser. Tem tudo explicadinho no tweet fixado. Mas é só fazer um tweet mencionando o @RegressML e depois o nome da ação que você quiser entre aspas. Like that:</p>
+        <p class="highlight-text">@RegressML "OIBR3"</p>
+        <p>Não se preocupe com letras maiúsculas ou minúsculas, ele entende. Se você pedir uma ação que não existe, ele vai te responder também.</p>
+        <p>Que tal ir lá agora e ver a lista das ações que eles já publicam? Faz um tweet pro <a href="https://twitter.com/RegressML" target="_blank">@RegressML</a> que eles te respondem agora mesmo :)</p>
+        <p>Bots são legais! E eu trouxe outros bots legais por aí pra darmos uma olhada :D</p>
+
+        <h1 id="li-05">5. Outros bots pra nós :D</h1>
+        <hr class="title-row">
+        <ul id="last-list">
+            <li><h3><a href="https://twitter.com/this_vid/" target="_blank">@this_vid</a></h3></li>
+            <p>Você pode usar esse bot no Twitter para baixar um vídeo que você achou legal por lá <br>Só mencionar o perfil dele em um vídeo no Twitter e ele te manda pra um link pra você fazer o download do vídeo. Olha que daora!</p>
+            <li><h3><a href="https://twitter.com/DolarBipolar/" target="_blank">@DolarBipolar</a></h3></li>
+            <p>Esse bot posta o preço do dólar todos os dias, além de trazer informações sobre durante o dia - ele é bem engraçado, inclusive XD</p>
+            <li><h3><a href="https://groovy.bot/" target="_blank">Groovy</a></h3></li>
+            <p>Groovy é um bot pro Discord - um Skype mais moderno. Quando você estiver conversando com seus amigos, é só chamar ele e pedir uma música, ou uma playlist, que ele deixa tocando no fundo.</p>
+        </ul>
+    </div>
+
+    <div id="footer">
+        2021
+    </div>
+
+</body>
+</html>

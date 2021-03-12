@@ -1,0 +1,274 @@
+:root {
+    --blue: #4392f1;
+    --grey: #fafafa;
+    --font1: "Oswald";
+    --font2: "Montserrat";
+    --font3: "Roboto";
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+#banner {
+    border: black 0.0001px solid;
+    background: url(../images/me-and-mickey.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+@media (min-width: 700px) {
+    #banner{
+        background: url(../images/me-01.jpg);
+        background-position: center center;
+        background-size: cover;
+    }
+}
+
+#banner a {
+    color: white;
+    transition: 0.2s
+}
+
+#banner a:hover {
+    color: var(--blue);
+    transition: 0.2s;
+}
+
+    #banner header {
+        margin: 40px 0;
+        display: flex;
+        position: relative;
+        font-family: var(--font2);
+    }
+
+        #banner #home {
+            font-size: 150%;
+            margin-left: 7.5%;
+        }
+
+        #banner #menu {
+            display: flex;
+            position: absolute;
+            right: 0;
+            top: 15%;
+            margin-right: 7.5%;
+        }    
+
+            #banner header ul li {
+                text-align: center;
+                margin-left: 20px;
+            }
+
+            @media (max-width: 800px) {
+                #banner #home {
+                    font-size: 120%;
+                }
+                #banner header ul li {
+                    font-size: 80%;
+                }
+            }
+
+    #banner #banner-title {
+        height: 280px;
+        width: 50%;
+        padding-left: 7.5%;
+        padding-right: 7.5%;
+        padding-top: 7%;
+        padding-bottom: 4%;
+    }
+
+        #banner #banner-title h1 {
+            color: white;
+            margin-bottom: 20px;
+            font-family: var(--font1);
+        }
+
+        #banner #banner-title p {
+            color: white;
+            text-align: justify;
+            font-family: var(--font3);
+        }
+
+        #banner #banner-title a {
+            color: var(--blue)
+        }
+
+        #banner #banner-title a:hover {
+            color: white;
+            text-decoration: underline;
+        }
+
+        @media (max-width: 800px) {
+            #banner #banner-title {
+                height: 290px;
+                padding-top: 20%;
+                padding-bottom: 10%;
+            }
+
+            #banner #banner-title h1 {
+                font-size: 170%;
+            }
+
+            #banner #banner-title p {
+                font-size: 80%;
+            }
+        }
+
+#box2 {
+    background: black;
+    display: flex;
+    padding-top: 100px;
+    padding-bottom: 80px;
+    color: white;
+}
+
+    #box2 #box2-title {
+        width: 50%;
+        line-height: 25px;
+        margin-left: 60px;
+    }
+
+        #box2 #box2-title h2 {
+            padding-top: 20px;
+            font-family: var(--font1);
+        } 
+
+    #box2 #box2-list {
+        margin-right: 80px;
+        text-align: justify; 
+    }
+
+        #box2 #box2-list li {
+            padding-bottom: 20px;
+        }
+
+            #box2 #box2-list li h3 {
+                font-family: var(--font2);
+                color: var(--blue);
+                font-size: 150%;
+                transition: 0.2s;
+                margin-bottom: 10px;
+            }
+
+            #box2 #box2-list li h3:hover {
+                color: white;
+                transition: 0.2s
+            }
+
+            #box2 #box2-list li p {
+                font-family: var(--font3);
+            }
+
+            #box2 #box2-list li p a {
+                color: var(--blue);
+                transition: 0.2s;
+            }
+
+            #box2 #box2-list li p a:hover {
+                color: white;
+                text-decoration: underline;
+                transition: 0.2s;
+            }
+
+    #box2 #box2-list {
+        width: 50%;
+    }
+
+    @media (max-width: 800px) {
+        #box2 {
+            display: block;
+        }
+        
+        #box2 #box2-title {
+            width: 80%;
+            margin-bottom: 20px;
+            margin-left: 30px;
+        }
+        
+        #box2 #box2-list {
+            width: 100%;
+        }
+
+            #box2 #box2-list ul {
+                padding: 0 30px;
+            }
+    }
+        
+#resume {
+    margin: 80px 200px;
+}
+
+@media (max-width: 800px) {
+    #resume {
+        margin: 80px 30px;
+        text-align: justify;
+    }
+}
+
+    ol, ul#others-list {
+        list-style-type: none;
+    }
+
+        #resume h2 {
+            font-family: var(--font1);
+            margin-top: 30px;
+            margin-bottom: 20px;
+            border-bottom: grey 1px solid;
+        }
+
+        h3 {
+            font-family: var(--font2);
+            margin-top: 10px;
+            margin-bottom: 5px;
+        }
+
+        h4 {
+            font-family: var(--font3);
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+    .time {
+        display: flex;
+        text-align: right;
+        color: grey;
+        font-size: 80%;
+    }
+
+        .time dt {
+            margin-inline: 5px;
+        }
+
+    .end {
+        text-align: right;
+    }
+
+    .description {
+        margin-left: 20px;
+        margin-bottom: 30px;
+        text-align: justify;
+        font-family: var(--font3);
+    }
+
+    #resume li p {
+        font-family: var(--font3);
+    }
+
+    .final-lists li {
+        list-style: none;
+        font-family: var(--font3);
+    }
+
+#footer {
+    background: black;
+    height: 50px;
+    text-align: center;
+    padding-top: 25px;
+    color: white;
+    font-family: var(--font2);
+}
