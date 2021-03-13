@@ -286,9 +286,8 @@
     }
 
     .description {
-        margin-left: 20px;
         margin-bottom: 30px;
-        text-align: justify;
+        text-align: left;
         font-family: var(--font3);
     }
 
@@ -297,6 +296,7 @@
     }
 
     .final-lists li {
+        margin: 10px 0;
         list-style: none;
         font-family: var(--font3);
     }

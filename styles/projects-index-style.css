@@ -89,7 +89,7 @@
 
         #banner #banner-title p {
             color: white;
-            text-align: justify;
+            text-align: left;
             font-family: var(--font3);
         }
 

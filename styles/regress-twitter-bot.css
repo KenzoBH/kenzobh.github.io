@@ -4,6 +4,7 @@
     --font1: "Oswald";
     --font2: "Montserrat";
     --font3: "Roboto";
+    --font4: "Esteban";
 }
 
 * {
@@ -210,7 +211,7 @@
             }
 
 #content {
-    margin: 20px 20%;
+    margin: 20px 25%;
 }
 
 @media (max-width:850px) {
@@ -218,11 +219,6 @@
         padding: 0 10%;
     }
 }
-
-    #content p {
-        font-family: var(--font3);
-        font-size: 90%;
-    }
 
     @media (max-width: 858px) {
         #content {
@@ -236,9 +232,8 @@
         display: block;
         margin-left: auto;
         margin-right: auto;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        border-radius: 5px;
+        margin-top: 50px;
+        margin-bottom: 50px;
         border: grey solid 1px;
     }
 
@@ -248,14 +243,16 @@
     }
 
     #content p {
-        font-family: var(--font3);
+        font-family: var(--font4);
+        font-size: 130%;
+        line-height: 35px;
         margin-bottom: 10px;
-        text-align: justify;
+        text-align: left;
     }
 
     #content p.highlight-text {
         text-align: center;
-        margin: 10px 20px;
+        margin: 50px 10px;
     }
 
     #content p.highlight-text:hover {

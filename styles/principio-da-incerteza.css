@@ -4,6 +4,7 @@
     --font1: "Oswald";
     --font2: "Montserrat";
     --font3: "Roboto";
+    --font4: "Esteban";
 }
 
 * {
@@ -126,10 +127,8 @@
         }
 
 #content {
-    padding: 70px 20%;
-    font-family: var(--font3);
-    font-size: 150%;
-    line-height: 35px;
+    padding: 70px 25%;
+    font-family: var(--font4);
 }
 
 @media (max-width: 800px) {
@@ -140,7 +139,9 @@
 
     #content p {
         margin: 20px 0;
-        text-align: justify;
+        text-align: left;
+        font-size: 130%;
+        line-height: 35px;
     }
 
     #content p.highlight {
