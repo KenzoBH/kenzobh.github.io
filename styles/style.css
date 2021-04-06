@@ -209,74 +209,87 @@
     }
 
 #box3 {
-    background: black;
-    padding: 100px 0;
+    background-color: black;
+    padding: 5em 10em 5em 10em;
+    color: white;
 }
 
     #box3 h2 {
         text-align: center;
-        color: white;
-        position: relative;
+        font-size: 2em;
         font-family: var(--font1);
-        text-decoration: underline var(--blue);
-        margin-bottom: -60px;
+        margin-bottom: 1em;
+    }
+
+    #box3 ul {
+        display: flex;
+        left: 50%;
+        padding-left: 15%;
     }
 
         #box3 ul li {
+            position: center;
+            margin: 1em;
+            width: 20em;
             text-align: center;
         }
-
-            #box3 ul #project01 {
-                z-index: 3;
-                margin-top: 100px;
-                position: relative;
-            }
-
-            #box3 ul #project02 {
-                margin-top: -60px;
-            }
-
-            #box3 ul img {
+        
+        #box3 ul li h3, h4{
+            font-family: var(--font2);
+        }
+        
+        #box3 ul li h3 {
+            margin-top: 1em;
+            font-size: 1.5em;
+        }
+        
+            #box3 ul li a {
+                color: var(--blue);
                 transition: 0.5s;
             }
 
-            #box3 ul img:hover {
-                transform: translateY(-10px);
+            #box3 ul li a:hover {
+                color: white;
+                text-decoration: underline;
                 transition: 0.5s;
             }
-
-        @media (max-width: 700px) {
-            #box3 ul li {
-                text-align: center;
+        
+            #box3 ul li img {
+                width: 60%;
+                transition: 1s;
             }
-    
-                #box3 ul img {
-                    width: 95%;
-                }
 
-                #box3 ul #project01 {
-                    z-index: 3;
-                    margin-top: 100px;
-                    position: relative;
-                }
-    
-                #box3 ul #project02 {
-                    margin-top: -20px;
-                    width: 80%;
-                    margin-left: 50%;
-                    transform: translateX(-50%);
-                }
-    
-                #box3 ul img {
-                    transition: 0.5s;
-                }
-    
-                #box3 ul img:hover {
+                #box3 ul li img:hover {
                     transform: translateY(-10px);
-                    transition: 0.5s;
+                    transition: 1s;
                 }
+        
+            #box3 ul li p {
+                margin-top: 1em;
+                text-align: justify;
+                font-family: var(--font3);
+            }
+
+    @media (max-width: 700px) {
+        #box3 {
+            padding: 2em;
         }
 
+        #box3 ul {
+            display: block;
+            padding-left: 0;
+        }
+
+        #box3 ul li {
+            margin: 0;
+            margin-bottom: 5em;
+            width: 100%;
+        }
+
+        #box3 ul li img {
+            width: 100%;
+        }
+    }
 
 #footer {
     background: #111111;
