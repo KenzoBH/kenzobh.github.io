@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 :root {
     --blue: #4392f1;
     --grey: #fafafa;
@@ -136,7 +140,7 @@
             }
 
 #box2 {
-    background: #111111;
+    background: black;
     display: flex;
     padding-top: 100px;
     padding-bottom: 80px;
@@ -209,7 +213,7 @@
     }
 
 #box3 {
-    background-color: black;
+    background-color: #111111;
     padding: 5em 10em 5em 10em;
     color: white;
 }
@@ -255,6 +259,7 @@
             }
         
             #box3 ul li img {
+                border: solid white;
                 width: 60%;
                 transition: 1s;
             }
@@ -266,13 +271,14 @@
         
             #box3 ul li p {
                 margin-top: 1em;
+                font-size: 0.9em;
                 text-align: justify;
                 font-family: var(--font3);
             }
 
     @media (max-width: 700px) {
         #box3 {
-            padding: 2em;
+            padding: 4em;
         }
 
         #box3 ul {
@@ -287,12 +293,169 @@
         }
 
         #box3 ul li img {
-            width: 100%;
+            width: 60%;
         }
     }
 
+#box4 {
+    background: black;
+    display: flex;
+    padding-top: 100px;
+    padding-bottom: 80px;
+    color: white;
+}
+
+    #box4 #box4-title {
+        width: 50%;
+        line-height: 25px;
+        margin-left: 60px;
+    }
+
+        #box4 #box4-title h2 {
+            padding-top: 20px;
+            font-family: var(--font1);
+        } 
+
+    #box4 #box4-list {
+        margin-right: 80px;
+        text-align: justify; 
+    }
+
+        #box4 #box4-list li {
+            padding-bottom: 20px;
+        }
+
+            #box4 #box4-list li h3 {
+                font-family: var(--font2);
+                color: var(--blue);
+                font-size: 150%;
+                transition: 0.2s;
+                margin-bottom: 10px;
+            }
+
+            #box4 #box4-list li h3:hover {
+                color: white;
+                transition: 0.2s
+            }
+
+            #box4 #box4-list li p {
+                font-family: var(--font3);
+            }
+
+            #box4 #box4-list li p a {
+                color: var(--blue);
+                transition: 0.2s;
+            }
+
+            #box4 #box4-list li p a:hover {
+                color: white;
+                text-decoration: underline;
+                transition: 0.2s;
+            }
+
+    #box4 #box4-list {
+        width: 50%;
+    }
+
+    @media (max-width: 800px) {
+        #box4 {
+            display: block;
+        }
+        
+        #box4 #box4-title {
+            width: 80%;
+            margin-bottom: 20px;
+            margin-left: 30px;
+        }
+        
+        #box4 #box4-list {
+            width: 100%;
+        }
+
+            #box4 #box4-list ul {
+                padding: 0 30px;
+                font-size: 80%;
+            }
+    }
+        
+#resume {
+    margin: 80px 200px;
+}
+
+@media (max-width: 800px) {
+    #resume {
+        margin: 80px 30px;
+        text-align: justify;
+    }
+}
+
+    ol, ul#others-list {
+        list-style-type: none;
+    }
+
+        #resume h2 {
+            font-family: var(--font1);
+            margin-top: 30px;
+            margin-bottom: 20px;
+            border-bottom: grey 1px solid;
+        }
+
+        #resume h3 {
+            font-family: var(--font2);
+            text-align: left;
+            text-decoration: underline;
+            margin-top: 10px;
+            margin-bottom: 5px;
+        }
+
+        #resume h4 {
+            font-family: var(--font3);
+            font-size: 90%;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+    .time {
+        display: flex;
+        text-align: right;
+        color: grey;
+        font-size: 80%;
+    }
+
+        .time dt {
+            margin-inline: 5px;
+        }
+
+    .end {
+        text-align: right;
+    }
+
+    .description {
+        margin-bottom: 30px;
+        text-align: left;
+        font-family: var(--font3);
+        font-size: 80%;
+    }
+
+    #resume li p {
+        font-family: var(--font3);
+        font-size: 0.9em;
+    }
+
+    .final-lists li {
+        margin: 10px 0;
+        list-style: none;
+        font-family: var(--font3);
+        font-size: 0.9em;
+    }
+
+    #resume a:hover {
+        text-decoration: underline;
+    }
+
 #footer {
-    background: #111111;
+    background: black;
     height: 50px;
     text-align: center;
     padding-top: 25px;
