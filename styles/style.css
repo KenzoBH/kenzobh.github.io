@@ -227,8 +227,7 @@ html {
 
     #box3 ul {
         display: flex;
-        left: 50%;
-        padding-left: 15%;
+        justify-content: center;
     }
 
         #box3 ul li {
