@@ -139,7 +139,7 @@ html {
                 }
             }
 
-#box2 {
+#indice {
     background: black;
     display: flex;
     padding-top: 100px;
@@ -147,128 +147,128 @@ html {
     color: white;
 }
 
-    #box2 #box2-title {
+    #indice #indice-title {
         width: 50%;
         line-height: 25px;
         margin-left: 60px;
     }
 
-        #box2 #box2-title h2 {
+        #indice #indice-title h2 {
             padding-top: 20px;
             font-family: var(--font1);
         } 
 
-    #box2 #box2-list {
+    #indice #indice-list {
         margin-right: 80px;
         text-align: justify; 
     }
 
-        #box2 #box2-list li {
+        #indice #indice-list li {
             padding-bottom: 20px;
         }
 
-            #box2 #box2-list li h3 {
+            #indice #indice-list li h3 {
                 font-family: var(--font2);
             }
 
-                #box2 #box2-list li h3 a {
+                #indice #indice-list li h3 a {
                     color: white;
                     font-size: 150%;
                     text-decoration: underline;
                     transition: 0.2s;
                 }
 
-                #box2 #box2-list li h3 a:hover {
+                #indice #indice-list li h3 a:hover {
                     color: var(--blue);
                     transition: 0.2s
                 }
 
-            #box2 #box2-list li p {
+            #indice #indice-list li p {
                 font-family: var(--font3);
             }
 
-    #box2 #box2-list {
+    #indice #indice-list {
         width: 50%;
     }
 
     @media (max-width: 800px) {
-        #box2 {
+        #indice {
             display: block;
         }
         
-        #box2 #box2-title {
+        #indice #indice-title {
             width: 80%;
             margin-bottom: 20px;
             margin-left: 30px;
         }
         
-        #box2 #box2-list {
+        #indice #indice-list {
             width: 100%;
         }
 
-            #box2 #box2-list ul {
+            #indice #indice-list ul {
                 font-size: 80%;
                 padding: 0 30px;
             }
     }
 
-#box3 {
+#projetos {
     background-color: #111111;
     padding: 5em 10em 5em 10em;
     color: white;
 }
 
-    #box3 h2 {
+    #projetos h2 {
         text-align: center;
         font-size: 2em;
         font-family: var(--font1);
         margin-bottom: 1em;
     }
 
-    #box3 ul {
+    #projetos ul {
         display: flex;
         justify-content: center;
     }
 
-        #box3 ul li {
+        #projetos ul li {
             position: center;
             margin: 1em;
             width: 20em;
             text-align: center;
         }
         
-        #box3 ul li h3, h4{
+        #projetos ul li h3, h4{
             font-family: var(--font2);
         }
         
-        #box3 ul li h3 {
+        #projetos ul li h3 {
             margin-top: 1em;
             font-size: 1.5em;
         }
         
-            #box3 ul li a {
+            #projetos ul li a {
                 color: var(--blue);
                 transition: 0.5s;
             }
 
-            #box3 ul li a:hover {
+            #projetos ul li a:hover {
                 color: white;
                 text-decoration: underline;
                 transition: 0.5s;
             }
         
-            #box3 ul li img {
+            #projetos ul li img {
                 border: solid white;
                 width: 60%;
                 transition: 1s;
             }
 
-                #box3 ul li img:hover {
+                #projetos ul li img:hover {
                     transform: translateY(-10px);
                     transition: 1s;
                 }
         
-            #box3 ul li p {
+            #projetos ul li p {
                 margin-top: 1em;
                 font-size: 0.9em;
                 text-align: justify;
@@ -276,27 +276,27 @@ html {
             }
 
     @media (max-width: 700px) {
-        #box3 {
+        #projetos {
             padding: 4em;
         }
 
-        #box3 ul {
+        #projetos ul {
             display: block;
             padding-left: 0;
         }
 
-        #box3 ul li {
+        #projetos ul li {
             margin: 0;
             margin-bottom: 5em;
             width: 100%;
         }
 
-        #box3 ul li img {
+        #projetos ul li img {
             width: 60%;
         }
     }
 
-#box4 {
+#sobre {
     background: black;
     display: flex;
     padding-top: 100px;
@@ -304,27 +304,27 @@ html {
     color: white;
 }
 
-    #box4 #box4-title {
+    #sobre #sobre-title {
         width: 50%;
         line-height: 25px;
         margin-left: 60px;
     }
 
-        #box4 #box4-title h2 {
+        #sobre #sobre-title h2 {
             padding-top: 20px;
             font-family: var(--font1);
         } 
 
-    #box4 #box4-list {
+    #sobre #sobre-list {
         margin-right: 80px;
         text-align: justify; 
     }
 
-        #box4 #box4-list li {
+        #sobre #sobre-list li {
             padding-bottom: 20px;
         }
 
-            #box4 #box4-list li h3 {
+            #sobre #sobre-list li h3 {
                 font-family: var(--font2);
                 color: var(--blue);
                 font-size: 150%;
@@ -332,46 +332,46 @@ html {
                 margin-bottom: 10px;
             }
 
-            #box4 #box4-list li h3:hover {
+            #sobre #sobre-list li h3:hover {
                 color: white;
                 transition: 0.2s
             }
 
-            #box4 #box4-list li p {
+            #sobre #sobre-list li p {
                 font-family: var(--font3);
             }
 
-            #box4 #box4-list li p a {
+            #sobre #sobre-list li p a {
                 color: var(--blue);
                 transition: 0.2s;
             }
 
-            #box4 #box4-list li p a:hover {
+            #sobre #sobre-list li p a:hover {
                 color: white;
                 text-decoration: underline;
                 transition: 0.2s;
             }
 
-    #box4 #box4-list {
+    #sobre #sobre-list {
         width: 50%;
     }
 
     @media (max-width: 800px) {
-        #box4 {
+        #sobre {
             display: block;
         }
         
-        #box4 #box4-title {
+        #sobre #sobre-title {
             width: 80%;
             margin-bottom: 20px;
             margin-left: 30px;
         }
         
-        #box4 #box4-list {
+        #sobre #sobre-list {
             width: 100%;
         }
 
-            #box4 #box4-list ul {
+            #sobre #sobre-list ul {
                 padding: 0 30px;
                 font-size: 80%;
             }
