@@ -135,7 +135,7 @@
                 }
             }
 
-#posts-list {
+#posts-list, #shorts {
     background: #161616;
     display: flex;
     padding-top: 100px;
@@ -143,23 +143,24 @@
     color: white;
 }
 
-    #posts-list .title {
+    .title {
         width: 50%;
         line-height: 25px;
         margin-left: 60px;
     }
 
-        #posts-list .title h2 {
+        .title h2 {
             padding-top: 20px;
             font-family: var(--font1);
+            padding-top: 0px;
         } 
 
-    #posts-list .list {
+    .list {
         margin-right: 80px;
         text-align: justify; 
     }
 
-        #posts-list .list li {
+        .list li {
             background-color: black;
             border-radius: 10px;
             padding-bottom: 20px;
@@ -167,7 +168,7 @@
             padding: 20px;
         }
 
-            #posts-list .list li h3 {
+            .list li h3 {
                 font-family: var(--font2);
                 color: white;
                 text-decoration: underline;
@@ -177,47 +178,63 @@
                 text-align: left;
             }
 
-            #posts-list .list li h3:hover {
+            .list li h3:hover {
                 color: var(--blue);
             }
 
-            #posts-list .list li p {
+            .list li p {
                 font-family: var(--font3);
                 color: white;
             }
 
-            #posts-list .list li p a {
+            .list li p a {
                 color: var(--blue);
                 transition: 0.2s;
             }
             
 
-    #posts-list .list {
+    .list {
         width: 50%;
     }
 
     @media (max-width: 800px) {
-        #posts-list {
+        #posts-list, #shorts {
             display: block;
         }
         
-        #posts-list .title {
+        .title {
             width: 80%;
             margin-bottom: 20px;
             margin-left: 30px;
         }
         
-        #posts-list .list {
+        .list {
             width: 100%;
         }
 
-            #posts-list .list ul {
+            .list ul {
                 padding: 0 30px;
             }
     }
 
-#footer {
+#shorts {
     background: black;
+}
+
+    #shorts li {
+        font-family: var(--font3);
+        color: white;
+        padding: 0;
+    }
+
+    #shorts li dt {
+        color: var(--blue);
+        font-size: 12.5px;
+        padding-top: 10px;
+    }
+
+#footer {
+    background: #161616;
     height: 50px;
     text-align: center;
     padding-top: 25px;
