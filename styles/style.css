@@ -174,12 +174,12 @@ html {
                 #indice #indice-list li h3 a {
                     color: white;
                     font-size: 150%;
-                    text-decoration: underline;
                     transition: 0.2s;
                 }
 
                 #indice #indice-list li h3 a:hover {
                     color: var(--blue);
+                    text-decoration: underline;
                     transition: 0.2s
                 }
 
@@ -402,7 +402,6 @@ html {
         #resume h3 {
             font-family: var(--font2);
             text-align: left;
-            text-decoration: underline;
             margin-top: 10px;
             margin-bottom: 5px;
         }
