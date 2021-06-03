@@ -1,0 +1,197 @@
+:root {
+    --red: #4392f1;
+    --grey: #fafafa;
+    --red: #EA1D2C;
+    --font1: "Oswald";
+    --font2: "Montserrat";
+    --font3: "Roboto";
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+#banner {
+    border: black 0.0001px solid;
+    background: black;
+    background-position: center center;
+    background-size: cover;
+}
+
+#banner a {
+    color: white;
+    transition: 0.2s
+}
+
+#banner a:hover {
+    color: var(--red);
+    transition: 0.2s;
+}
+
+    #banner header {
+        margin: 40px 0;
+        display: flex;
+        position: relative;
+        font-family: var(--font2);
+    }
+
+        #banner #home {
+            font-size: 150%;
+            margin-left: 7.5%;
+        }
+
+        #banner #menu {
+            display: flex;
+            position: absolute;
+            right: 0;
+            top: 15%;
+            margin-right: 7.5%;
+        }    
+
+            #banner header ul li {
+                text-align: center;
+                margin-left: 20px;
+            }
+
+            @media (max-width: 800px) {
+                #banner #home {
+                    font-size: 120%;
+                }
+                #banner header ul li {
+                    font-size: 80%;
+                }
+            }
+
+            #banner #banner-title {
+                height: 280px;
+                width: 50%;
+                padding-bottom: 4%;
+                padding-top: 100px;
+                text-align: center;
+                margin-left: 50%;
+                transform: translateX(-50%);
+            }
+        
+                #banner #banner-title h1 {
+                    font-size: 300%;
+                    margin-bottom: 20px;
+                    font-family: var(--font1);
+                    color: var(--red); 
+                }
+        
+                #banner #banner-title p {
+                    color: white;
+                    font-family: var(--font3);
+                    margin-bottom: 50px;
+                    padding: 0 20%;
+                }
+        
+                #banner #banner-title a {
+                    color: black;
+                    font-family: var(--font1);
+                    border-radius: 5px;
+                    background: white;
+                    padding: 10px;
+                }
+        
+                #banner #banner-title a:hover {
+                    background: var(--red);
+                    color: white;
+                    text-decoration: underline;
+                }
+        
+                @media (max-width: 800px) {
+                    #banner #banner-title {
+                        height: 290px;
+                        padding-top: 30%;
+                        padding-bottom: 10%;
+                    }
+        
+                    #banner #banner-title p {
+                        font-size: 80%;
+                        padding: 0 10%;
+                    }
+                }
+        
+    #banner footer {
+        border-top: var(--red) 2px solid;
+        margin: 0 5%;
+        padding: 40px 0;
+        font-family: var(--font2);
+    }
+
+        #banner footer ul {
+            display: flex;
+            justify-content: center;
+        }
+
+            #banner footer ul li {
+                padding: 0 10%;
+                font-size: 80%;
+            }
+
+            #banner footer ul li p {
+                color: var(--red)
+            }
+
+            @media (max-width: 800px) {
+                #banner footer {
+                    padding: 20px 0;
+                }
+                
+                #banner footer ul {
+                    display: block;
+                }
+
+                #banner footer ul li {
+                    padding: 10px 5%;
+                    font-size: 60%;
+                }
+            }
+    
+    #intro {
+        background-color: var(--red);
+        padding: 60px 30px;
+    }
+
+        #intro ul {
+            display: flex;
+        }
+
+            #intro ul li {
+                padding: 10px;
+                width: 500px;
+            }
+
+                #intro ul li h2 {
+                    font-family: var(--font1);
+                    color: white;
+                    margin-bottom: 10px;
+                }
+
+                #intro ul li p {
+                    font-family: var(--font3);
+                    font-size: 90%;
+                }
+        
+        @media (max-width: 800px) {
+            #intro ul {
+                display: block;
+            }
+
+                #intro ul li {
+                    width: 100%;
+                }
+        }
+
+#footer {
+    background: #161616;
+    height: 50px;
+    text-align: center;
+    padding-top: 25px;
+    color: white;
+    font-family: var(--font2);
+}
