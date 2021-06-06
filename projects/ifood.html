@@ -55,7 +55,92 @@
     </div>
 
     <div id="content">
-        
+        <h1>ifood!</h1>
+
+            <p>Olá! Essa página descreve um projeto que desenvolvi.<br>
+            Ele envolveu vários conhecimentos relacionados à ciência de dados - como Web Scraping, limpeza de dados e análise exploratória: jajá eu explico direitinho o que são esses termos hehe. Utilizei ferramentas em Python, para coleta e limpeza, e em R, para análise e documentação.</p>
+            <br>
+            <p>Esta página tem intutito de descrever os passos realizados de forma mais superficial.<br>
+            Caso queira se aprofundar e verificar mais a fundo na documentação oficial do projeto, <a href="https://github.com/KenzoBH/Web-Scraping-and-EDA-iFood" target="_blank">aqui está</a> o link para o repositório no GitHub, em que tudo está bem documentadinho. A análise final dos dados se encontra <a href="https://kenzobh.github.io/projects/ifood-final-eda" target="_blank">neste link</a>.<br>
+            Let's go!</p>
+            <br>
+
+            <h3>Motivação</h3>
+
+            <p>Em conjunto com o time da <a href="https://www.instagram.com/imejr.usp/" target="_blank">IME Jr.</a>, empresa júnior do Instituto de Matemática e Estatística da USP, realizou-se a coleta de dados relativos a restaurantes nas proximidades de cada um dos integrantes, pelo site do ifood. Em seguida, limpei e juntei dados coletados por outros integrantes para realizar uma análise exploratória.</p>
+            <br>
+
+            <p>O projeto, portanto, pode ser dividido em algumas etapas básicas, que serão discutos nos próximos tópicos:</p>
+            <br>
+
+            <ol>
+                <li>1. <a href="">Coleta</a></li>
+                <li>2. <a href="">Limpeza e junção</a></li>
+                <li>3. <a href="">Análise</a></li>
+            </ol>
+            <br>
+
+        <h2>1. Coleta</h2>
+            <ul>
+                <li>- Ferramentas utilizadas: Python & Selenium</li>
+                <li>- Link para o código: <a href="https://github.com/KenzoBH/Web-Scraping-and-EDA-iFood/blob/main/web-scraper-ifood.py" target="_blank">web-scraper.py</a></li>
+                <li>- Link para os dados coletados: <a href="https://github.com/KenzoBH/Web-Scraping-and-EDA-iFood/blob/main/scraped-data.csv" target="_blank">scraped-data.csv</a></li>
+            </ul>
+            <br>
+
+            <p>Uma pergunta: como <em>você</em> coletaria dados (nome, nota, tipo, etc.) sobre os restaurantes da sua região? Iria num site de restaurantes e iria ver um por um, não? I guess so.</p>
+            <br>
+
+            <p>E se eu quisesse coletar dados de 100 restaurates, por exemplo? Demoraria hein. Até anotar o nome dos 100 restaurantes e as notas, por exemplo, a minha mão ia cair. Por isso, utlizei Python pra acelerar o processo pra gente.</p>
+            <br>
+
+            <p>Vejamos como podemos coletar dados do seguinte site do ifood:</p>
+            <br>
+
+            <img src="../images/ifood-website.gif" alt="Site do ifood">
+            <br><br>
+
+            <p>Tem muitos restaurantes aí, né. E cada "box" tem algumas informações interessantes sobre cada restaurante, como a nota dele no site, o tipo de comida que ele vende e etc. Eu estava interessado em fazer uma planilha do Excel mais ou menos assim</p>
+
+            <table>
+                <thead>
+                    <tr><th>Restaurante</th><th>Nota</th><th>Tipo de comida</th><th>Distancia</th><th>Tempo</th><th>Taxa de entrega</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>Gokei - Carrão</td><td>4.6</td><td>Japonesa</td><td>0.9</td><td>59-69 min</td><td>0.0</td></tr>
+                    <tr><td>Pikurruchas Tatuapé</td><td>4.7</td><td>Doces &amp; Bolos</td><td>2.3</td><td>34-44 min</td><td>6.99</td></tr>
+                    <tr><td>Mussa Esfiha - Anália Franco</td><td>4.7</td><td>Árabe</td><td>2.1</td><td>23-33 min</td><td>7.99</td></tr>
+                    <tr><td>Sassá Sushi - Tatuapé</td><td>4.4</td><td>Japonesa</td><td>3.8</td><td>41-51 min</td><td>10.49</td></tr>
+                    <tr><td>Meats - Anália Franco</td><td>4.7</td><td>Lanches</td><td>2.6</td><td>22-32 min</td><td>6.99</td></tr>
+                    <tr><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+                </tbody>
+            </table>
+            
+            <p>com muitos restaurantes. Para isso, utilizei programação pra fazer esse trabaçho mais "braçal", de anotar o nome do restaurante, a nota dele, e etc. Um dia eu faço um post mais detalhado sobre esse processo, conhecido como Web Scraping, por aqui.<br>
+            Mas, basicamente, devemos dar instruções pra um programa do tipo:</p>
+            <br>
+            
+            <div class="code">
+                nomes dos restaurantes = lista vazia <br>
+                notas dos restaurantes = lista vazia <br>
+                tipos dos restaurantes = lista vazia <br>
+                distancias = lista vazia <br>
+                tempos = lista vazia <br>
+                taxas de entrega = lista vazia <br>
+                <br>
+                rode isso para todo box que você encontrar: <br>
+                    pegue o nome do restaurante e adicione na lista dos nomes <br>
+                    pegue a nota do restaurante e adiciona na lista das notas <br>
+                    ... <br>
+            </div>
+            <br>
+            
+            <p>e no final, fazer uma planilha do Excel, e que cada coluna é uma dessas listas.<br>
+            O processo está mais detalhado <a href="https://github.com/KenzoBH/Web-Scraping-and-EDA-iFood/blob/main/web-scraper-ifood.py" target="_blank">neste código</a>, disponível no meu GitHub.</p>
+            <br>
+
+            <p>Enfim, coletei dados de mais de 100 restaurantes com algumas linhas de código, e gerei <a href="https://github.com/KenzoBH/Web-Scraping-and-EDA-iFood/blob/main/scraped-data.csv" target="_blank">esse arquivo .csv</a>, que é uma planilha do Excel em formato de texto - dá pra abrir pelo Excel, se você quiser :D</p>
+
     </div>
 
     <div id="footer">

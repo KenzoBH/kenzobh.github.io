@@ -184,8 +184,81 @@
 
                 #intro ul li {
                     width: 100%;
+                    transform: translateX(-10px);
                 }
         }
+
+#content {
+    border: 1px solid black;
+    padding: 50px 10%;
+    font-size: 15px;
+}
+
+    #content h1, h2, h3 {
+        font-family: var(--font1);
+    }
+
+    #content h1 {
+        border-bottom: 1px solid grey;
+        margin-bottom: 30px;
+    }
+
+    #content h2, h3 {
+        margin-bottom: 20px;
+    }
+
+    #content img {
+        width: 80%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #content table {
+        font-family: var(--font3);
+        border-collapse: collapse;
+        width: 80%;
+        margin: 20px 0;
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+
+        #content table thead {
+            border-bottom: 1px solid black;
+            margin-bottom: 10px;
+            width: 100%;
+        }
+
+        #content table tr {
+            line-height: 50px;
+        }
+
+        #content table tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+
+        #content table tr:hover {
+            background-color: #eee;
+        }
+
+            #content table tr td {
+                text-align: center;
+            }
+
+    #content p, ul, ol {
+        font-family: var(--font3);
+    }
+
+    #content .code {
+        background-color: #ddd;
+        font-family: consolas;
+        padding: 30px;
+        border-radius: 5px;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
 
 #footer {
     background: #161616;
