@@ -204,7 +204,7 @@
     }
 
     #content h2, #content h3 {
-        margin-bottom: 20px;
+        margin-bottom: 5px;
         font-size: 200%;
         margin-top: 20px;
         transition: 0.5s;
