@@ -200,10 +200,20 @@
     #content h1 {
         border-bottom: 1px solid grey;
         margin-bottom: 30px;
+        font-size: 300%;
     }
 
     #content h2, h3 {
         margin-bottom: 20px;
+        font-size: 200%;
+        margin-top: 20px;
+        transition: 0.5s;
+    }
+
+    #content h2:hover, h3:hover {
+        border-left: 1px solid grey;
+        padding-left: 20px;
+        transition: 0.5s;
     }
 
     #content img {
