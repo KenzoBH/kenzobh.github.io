@@ -193,7 +193,7 @@
     font-size: 15px;
 }
 
-    #content h1, h2, h3 {
+    #content h1, #content h2, #content h3 {
         font-family: var(--font1);
     }
 
@@ -203,14 +203,14 @@
         font-size: 300%;
     }
 
-    #content h2, h3 {
+    #content h2, #content h3 {
         margin-bottom: 20px;
         font-size: 200%;
         margin-top: 20px;
         transition: 0.5s;
     }
 
-    #content h2:hover, h3:hover {
+    #content h2:hover, #content h3:hover {
         border-left: 1px solid grey;
         padding-left: 20px;
         transition: 0.5s;
@@ -254,7 +254,7 @@
                 text-align: center;
             }
 
-    #content p, ul, ol {
+    #content p, #content ul, #content ol {
         font-family: var(--font3);
     }
 
