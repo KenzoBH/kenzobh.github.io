@@ -1,3 +1,11 @@
+:root {
+    --blue: #4392f1;
+    --grey: #fafafa;
+    --font1: "Oswald";
+    --font2: "Montserrat";
+    --font3: "Roboto";
+}
+
 #footer-box {   
     background: black;
     height: 100%;
