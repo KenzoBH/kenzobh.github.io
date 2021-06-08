@@ -267,13 +267,3 @@
         margin-left: auto;
         margin-right: auto;
     }
-
-
-#footer {
-    background: #161616;
-    height: 50px;
-    text-align: center;
-    padding-top: 25px;
-    color: white;
-    font-family: var(--font2);
-}

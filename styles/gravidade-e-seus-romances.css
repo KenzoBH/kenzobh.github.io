@@ -148,12 +148,3 @@
         text-align: center;
         color: var(--blue);
     }
-
-#footer {
-    background: black;
-    height: 50px;
-    text-align: center;
-    padding-top: 25px;
-    color: white;
-    font-family: var(--font2);
-}

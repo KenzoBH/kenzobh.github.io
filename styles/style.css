@@ -452,11 +452,59 @@ html {
         text-decoration: underline;
     }
 
-#footer {
+
+#footer-box {   
     background: black;
-    height: 50px;
-    text-align: center;
-    padding-top: 25px;
+    height: 100%;
+}
+
+#footer {
+    padding-top: 100px;
     color: white;
-    font-family: var(--font2);
+    font-family: var(--font3);
+}
+
+    #footer #footer-infos {
+        padding-left: 100px;
+    }
+
+        #footer #footer-infos h2 {
+            font-family: var(--font1);
+            font-size: 300%;
+            margin-bottom: 30px;
+        }
+
+        #footer #footer-icons {
+            margin-left: -10px;
+        }
+
+            #footer #footer-infos p {
+                line-height: 150%;
+            }
+
+            #footer #footer-icons .fa {
+                color: white;
+                padding: 10px;
+                font-size: 20px;
+                width: 20px;
+                transition: 0.25s;
+            }
+
+            #footer #footer-icons a:hover {
+                color: var(--blue);
+                transition: 0.25s;
+            }
+
+@media (max-width: 800px) {
+    #footer #footer-infos {
+        padding: 0;
+        margin-left: 50%;
+        transform: translateX(-50%)
+    }
+}
+
+#footer #footer-date {
+    text-align: center;
+    padding: 100px 0 50px 0;
+    color: grey;
 }
