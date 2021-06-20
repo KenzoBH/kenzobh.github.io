@@ -75,16 +75,16 @@ a:hover {
 
 #audio {
     font-family: var(--font3);
+    font-size: 12.5px;
     color: grey;
-    margin-left: 50%;
-    transform: translateX(-50%);
+    margin-left: auto;
     text-align: center;
     margin-top: 100px;
 }
 
     #audio audio {
-        margin-left: 50%;
-        transform: translateX(-50%);
+        margin-top: 10px;
+        margin-left: auto;
     }
 
 #content {
@@ -104,7 +104,7 @@ a:hover {
         border-bottom: 1px solid grey;
     }
 
-    #content p {
+    #content {
         font-family: var(--font3);
     }
 
