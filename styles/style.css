@@ -447,6 +447,10 @@ html {
         font-size: 0.9em;
     }
 
+    #resume a {
+        color: var(--blue)
+    }
+    
     #resume a:hover {
         text-decoration: underline;
     }
