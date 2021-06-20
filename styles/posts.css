@@ -13,14 +13,6 @@
     text-decoration: none;
 }
 
-a {
-    color: var(--blue)
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
 #banner {
     border: black 0.0001px solid;
     background-position: center center;
@@ -107,4 +99,12 @@ a:hover {
     #content {
         font-family: var(--font3);
     }
+
+        #content a {
+            color: var(--blue)
+        }
+
+        #content a:hover {
+            text-decoration: underline;
+        }
 
