@@ -171,7 +171,6 @@
             .list li h3 {
                 font-family: var(--font2);
                 color: white;
-                text-decoration: underline;
                 font-size: 150%;
                 transition: 0.2s;
                 margin-bottom: 10px;
@@ -180,6 +179,7 @@
 
             .list li h3:hover {
                 color: var(--blue);
+                text-decoration: underline;
             }
 
             .list li p {
