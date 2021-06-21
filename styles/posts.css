@@ -1,70 +1,3 @@
-:root {
-    --blue: #4392f1;
-    --grey: #fafafa;
-    --font1: "Oswald";
-    --font2: "Montserrat";
-    --font3: "Roboto";
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    text-decoration: none;
-}
-
-#banner {
-    border: black 0.0001px solid;
-    background-position: center center;
-    background-size: cover;
-    background-color: black;
-    margin-bottom: 100px;
-}
-
-#banner a {
-    color: white;
-    transition: 0.2s
-}
-
-#banner a:hover {
-    color: var(--blue);
-    transition: 0.2s;
-}
-
-    #banner header {
-        margin: 40px 0;
-        display: flex;
-        position: relative;
-        font-family: var(--font2);
-    }
-
-        #banner #home {
-            font-size: 150%;
-            margin-left: 7.5%;
-        }
-
-        #banner #menu {
-            display: flex;
-            position: absolute;
-            right: 0;
-            top: 15%;
-            margin-right: 7.5%;
-        }    
-
-            #banner header ul li {
-                text-align: center;
-                margin-left: 20px;
-            }
-
-            @media (max-width: 800px) {
-                #banner #home {
-                    font-size: 120%;
-                }
-                #banner header ul li {
-                    font-size: 80%;
-                }
-            }
-
 
 #audio {
     font-family: var(--font3);
@@ -114,4 +47,3 @@
             margin-right: -50%;
             width: 50%;
         }
-
