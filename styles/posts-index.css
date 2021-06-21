@@ -181,11 +181,20 @@
     padding: 150px 10% 100px 10%;
 }
 
+    #shorts .year {
+        display: flex;
+    }
+
     #shorts h2 {
+        width: 50%;
         margin-bottom: 50px;
         font-family: var(--font1);
         font-size: 30px;
         color: white;
+    }
+
+    #shorts .list {
+        width: 50%;
     }
 
     #shorts li {
@@ -194,7 +203,7 @@
 
         #shorts li dt {
             color: var(--blue);
-            margin-top: 10px;
+            margin-top: 5px;
         }
 
     #shorts li a {
@@ -203,4 +212,19 @@
 
     #shorts a:hover {
         text-decoration: underline;
+    }
+
+    @media (max-width: 800px) {
+        #shorts .year {
+            display: block;
+        }
+
+        #shorts h2 {
+            width: 100%;
+        }
+
+        #shorts .list {
+            margin-left: 0;
+            width: 100%;
+        }
     }
