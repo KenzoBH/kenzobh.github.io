@@ -108,3 +108,10 @@
             text-decoration: underline;
         }
 
+        #content img {
+            margin-left: 50%;
+            transform: translateX(-50%);
+            margin-right: -50%;
+            width: 50%;
+        }
+
