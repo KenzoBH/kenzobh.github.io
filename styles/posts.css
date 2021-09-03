@@ -1,9 +1,36 @@
 
+#title_block{
+    height: 400px;
+    padding-top: 250px;
+    background-color: #FAFAFA;
+}
+
+    #title_block h1 {
+        font-family: var(--font1);
+        font-size: 50px;
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    #title_block h2 {
+        font-family: var(--font3);
+        color: grey;
+        font-size: 20px;
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    #title_block p {
+        font-family: var(--font3);
+        width: 50%;
+        margin: 30px auto 0px auto;
+    }
+
 #audio {
     font-family: var(--font3);
     font-size: 12.5px;
     color: grey;
-    margin-left: auto;
+    margin: 30px auto;
     text-align: center;
 }
 
