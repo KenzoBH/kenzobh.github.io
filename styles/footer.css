@@ -18,7 +18,7 @@
 }
 
     #footer #footer-infos {
-        padding-left: 100px;
+        padding-left: 200px;
     }
 
         #footer #footer-infos h2 {
@@ -56,7 +56,7 @@
     }
 }
 
-#footer #footer-date {
+#footer-date {
     text-align: center;
     padding: 100px 0 50px 0;
     color: grey;
