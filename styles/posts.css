@@ -40,7 +40,13 @@
     }
 
 #content {
-    margin: 100px 10% 100px 10%;
+    margin: 100px 200px 100px 200px;
+}
+
+@media (max-width: 800px) {
+    #content {
+        margin: 100px 30px;
+    }
 }
 
     #content {
