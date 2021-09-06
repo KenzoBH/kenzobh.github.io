@@ -1,7 +1,7 @@
 
 #title_block{
-    height: 400px;
-    padding-top: 250px;
+    height: 200px;
+    padding: 300px 0;
     background-color: #FAFAFA;
 }
 
@@ -24,6 +24,14 @@
         font-family: var(--font3);
         width: 50%;
         margin: 30px auto 0px auto;
+    }
+
+    @media (max-width: 800px) {
+        #title_block {
+            height: 400px;
+            padding-top: 25%;
+            padding-bottom: 25%;
+        }
     }
 
 #audio {
