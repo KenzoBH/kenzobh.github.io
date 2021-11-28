@@ -138,244 +138,84 @@ html {
                 }
             }
 
-#indice {
-    background: black;
+.indice {
     display: flex;
     padding-top: 100px;
     padding-bottom: 80px;
+    background: black;
     color: white;
 }
 
-    #indice #indice-title {
-        width: 50%;
+    .indice .indice-title {
         line-height: 25px;
         margin-left: 200px;
+        width: 50%;
     }
 
-        #indice #indice-title h2 {
-            padding-top: 20px;
+        .indice .indice-title h2 {
             font-family: var(--font1);
         } 
 
-    #indice #indice-list {
+    .indice .indice-list {
         margin-right: 200px;
         text-align: justify; 
     }
 
-        #indice #indice-list li {
-            padding-bottom: 20px;
+        .indice .indice-list li {
+            padding-bottom: 25px;
         }
 
-            #indice #indice-list li h3 {
+            .indice .indice-list li h3 {
                 font-family: var(--font2);
             }
 
-                #indice #indice-list li h3 a {
+                .indice .indice-list li h3 a {
                     color: white;
                     font-size: 150%;
                     transition: 0.2s;
                 }
 
-                #indice #indice-list li h3 a:hover {
+                .indice .indice-list li h3 a:hover {
                     color: var(--blue);
                     text-decoration: underline;
                     transition: 0.2s
                 }
-
-            #indice #indice-list li p {
-                font-family: var(--font3);
-            }
-
-    #indice #indice-list {
-        width: 50%;
-    }
-
-    @media (max-width: 800px) {
-        #indice {
-            display: block;
-        }
-        
-        #indice #indice-title {
-            width: 80%;
-            margin-bottom: 20px;
-            margin-left: 30px;
-        }
-        
-        #indice #indice-list {
-            width: 100%;
-        }
-
-            #indice #indice-list ul {
-                font-size: 80%;
-                padding: 0 30px;
-            }
-    }
-
-#projetos {
-    background-color: #111111;
-    padding: 5em 10em 5em 10em;
-    color: white;
-}
-
-    #projetos h2 {
-        text-align: center;
-        font-size: 2em;
-        font-family: var(--font1);
-        margin-bottom: 1em;
-    }
-
-    #projetos ul {
-        display: flex;
-        justify-content: center;
-    }
-
-        #projetos ul li {
-            position: center;
-            margin: 1em;
-            width: 20em;
-            text-align: center;
-        }
-        
-        #projetos ul li h3, h4{
-            font-family: var(--font2);
-        }
-        
-        #projetos ul li h3 {
-            margin-top: 1em;
-            font-size: 1.5em;
-        }
-        
-            #projetos ul li a {
-                color: var(--blue);
-                transition: 0.5s;
-            }
-
-            #projetos ul li a:hover {
-                color: white;
-                text-decoration: underline;
-                transition: 0.5s;
-            }
-        
-            #projetos ul li img {
-                border: solid white;
-                width: 60%;
-                transition: 1s;
-            }
-
-                #projetos ul li img:hover {
-                    transform: translateY(-10px);
-                    transition: 1s;
-                }
-        
-            #projetos ul li p {
-                margin-top: 1em;
-                font-size: 0.9em;
-                text-align: justify;
-                font-family: var(--font3);
-            }
-
-    @media (max-width: 700px) {
-        #projetos {
-            padding: 4em;
-        }
-
-        #projetos ul {
-            display: block;
-            padding-left: 0;
-        }
-
-        #projetos ul li {
-            margin: 0;
-            margin-bottom: 5em;
-            width: 100%;
-        }
-
-        #projetos ul li img {
-            width: 60%;
-        }
-    }
-
-#sobre {
-    background: black;
-    display: flex;
-    padding-top: 100px;
-    padding-bottom: 80px;
-    color: white;
-}
-
-    #sobre #sobre-title {
-        width: 50%;
-        line-height: 25px;
-        margin-left: 200px;
-    }
-
-        #sobre #sobre-title h2 {
-            padding-top: 20px;
-            font-family: var(--font1);
-        } 
-
-    #sobre #sobre-list {
-        margin-right: 200px;
-        text-align: justify; 
-    }
-
-        #sobre #sobre-list li {
-            padding-bottom: 20px;
-        }
-
-            #sobre #sobre-list li h3 {
+            
+            .indice .indice-list li h4 {
                 font-family: var(--font2);
                 color: var(--blue);
-                font-size: 150%;
-                transition: 0.2s;
-                margin-bottom: 10px;
             }
 
-            #sobre #sobre-list li h3:hover {
-                color: white;
-                transition: 0.2s
-            }
-
-            #sobre #sobre-list li p {
+            .indice .indice-list li p {
                 font-family: var(--font3);
+                margin-top: 5px;
             }
 
-            #sobre #sobre-list li p a {
-                color: var(--blue);
-                transition: 0.2s;
-            }
-
-            #sobre #sobre-list li p a:hover {
-                color: white;
-                text-decoration: underline;
-                transition: 0.2s;
-            }
-
-    #sobre #sobre-list {
+    .indice .indice-list {
         width: 50%;
     }
 
     @media (max-width: 800px) {
-        #sobre {
+        .indice {
             display: block;
         }
         
-        #sobre #sobre-title {
+        .indice .indice-title {
             width: 80%;
             margin-bottom: 20px;
             margin-left: 30px;
         }
         
-        #sobre #sobre-list {
+        .indice .indice-list {
             width: 100%;
         }
 
-            #sobre #sobre-list ul {
-                padding: 0 30px;
+            .indice .indice-list ul {
                 font-size: 80%;
+                padding: 0 30px;
             }
     }
-        
+
 #resume {
     margin: 80px 200px;
 }
