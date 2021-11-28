@@ -211,6 +211,18 @@
             margin-top: 5px;
         }
 
+        #shorts li img {
+            width: 100%;
+            -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+        }
+
+        #shorts li .small {
+            width: 60%;
+            -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+        }
+
     #shorts li a {
         color: var(--blue);
     }
