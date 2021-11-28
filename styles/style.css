@@ -250,6 +250,7 @@ html {
             font-size: 90%;
             margin-bottom: 10px;
             display: flex;
+            text-align: left;
             justify-content: space-between;
         }
 
@@ -270,7 +271,7 @@ html {
 
     .description {
         margin-bottom: 30px;
-        text-align: left;
+        text-align: justify;
         font-family: var(--font3);
         font-size: 80%;
     }
