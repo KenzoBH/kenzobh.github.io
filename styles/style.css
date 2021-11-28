@@ -149,7 +149,7 @@ html {
     #indice #indice-title {
         width: 50%;
         line-height: 25px;
-        margin-left: 60px;
+        margin-left: 200px;
     }
 
         #indice #indice-title h2 {
@@ -158,7 +158,7 @@ html {
         } 
 
     #indice #indice-list {
-        margin-right: 80px;
+        margin-right: 200px;
         text-align: justify; 
     }
 
@@ -306,7 +306,7 @@ html {
     #sobre #sobre-title {
         width: 50%;
         line-height: 25px;
-        margin-left: 60px;
+        margin-left: 200px;
     }
 
         #sobre #sobre-title h2 {
@@ -315,7 +315,7 @@ html {
         } 
 
     #sobre #sobre-list {
-        margin-right: 80px;
+        margin-right: 200px;
         text-align: justify; 
     }
 
