@@ -279,6 +279,7 @@ html {
     #resume li p {
         font-family: var(--font3);
         font-size: 0.9em;
+        text-align: justify;
     }
 
     .final-lists li {
