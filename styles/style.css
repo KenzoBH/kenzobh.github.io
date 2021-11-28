@@ -138,7 +138,7 @@ html {
                 }
             }
 
-.indice {
+#actual {
     display: flex;
     padding-top: 100px;
     padding-bottom: 80px;
@@ -146,71 +146,71 @@ html {
     color: white;
 }
 
-    .indice .indice-title {
+    #actual #actual-title {
         line-height: 25px;
         margin-left: 200px;
         width: 50%;
     }
 
-        .indice .indice-title h2 {
+        #actual #actual-title h2 {
             font-family: var(--font1);
         } 
 
-    .indice .indice-list {
+    #actual #actual-list {
         margin-right: 200px;
         text-align: justify; 
     }
 
-        .indice .indice-list li {
+        #actual #actual-list li {
             padding-bottom: 25px;
         }
 
-            .indice .indice-list li h3 {
+            #actual #actual-list li h3 {
                 font-family: var(--font2);
             }
 
-                .indice .indice-list li h3 a {
+                #actual #actual-list li h3 a {
                     color: white;
                     font-size: 150%;
                     transition: 0.2s;
                 }
 
-                .indice .indice-list li h3 a:hover {
+                #actual #actual-list li h3 a:hover {
                     color: var(--blue);
                     text-decoration: underline;
                     transition: 0.2s
                 }
             
-            .indice .indice-list li h4 {
+            #actual #actual-list li h4 {
                 font-family: var(--font2);
                 color: var(--blue);
             }
 
-            .indice .indice-list li p {
+            #actual #actual-list li p {
                 font-family: var(--font3);
                 margin-top: 5px;
             }
 
-    .indice .indice-list {
+    #actual #actual-list {
         width: 50%;
     }
 
     @media (max-width: 800px) {
-        .indice {
+        #actual {
             display: block;
         }
         
-        .indice .indice-title {
+        #actual #actual-title {
             width: 80%;
             margin-bottom: 20px;
             margin-left: 30px;
         }
         
-        .indice .indice-list {
+        #actual #actual-list {
             width: 100%;
         }
 
-            .indice .indice-list ul {
+            #actual #actual-list ul {
                 font-size: 80%;
                 padding: 0 30px;
             }
