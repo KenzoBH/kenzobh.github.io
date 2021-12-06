@@ -162,7 +162,7 @@
             overflow-x: auto;
             white-space: nowrap;
             -webkit-overflow-scrolling: touch;
-            height: 500px;
+            height: 400px;
         }
 
             .carousel .carousel__item {
@@ -172,7 +172,7 @@
 
                 .carousel .carousel__item .demo-content {
                     width: 200px;
-                    height: 450px;
+                    height: 400px;
                 }
 
                     .demo-content img {
