@@ -245,3 +245,66 @@
                 filter: grayscale(100%);
             }
     }
+
+.demo-container {
+    display: flex;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+}
+
+    .carousel {
+        overflow-x: auto;
+        margin: auto;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+        width: 80%;
+        height: 500px;
+    }
+
+        .carousel .carousel__item {
+            display: inline-flex;
+            vertical-align: top;
+        }
+
+            .carousel .carousel__item .demo-content {
+                width: 300px;
+                height: 450px;
+                border-radius: 3px;
+                margin: 0 10px;
+            }
+
+                .demo-content img {
+                    width: 60%;
+                    margin-left: 50%;
+                    transform: translateX(-50%);
+                    margin-top: 15%;
+                }
+
+                .demo-content h1 {
+                    font-family: var(--font1);
+                    font-size: 125%;
+                    width: 60%;
+                    margin-left: 50%;
+                    transform: translateX(-50%);
+                    color: white;
+                }
+                .demo-content h2 {
+                    font-family: var(--font2);
+                    font-size: 80%;
+                    width: 60%;
+                    margin-left: 50%;
+                    transform: translateX(-50%);
+                    color: white;
+                }
+                .demo-content dt {
+                    font-family: var(--font2);
+                    font-size: 80%;
+                    color: var(--blue);
+                    width: 60%;
+                    margin-left: 50%;
+                    transform: translateX(-50%);
+                }
+
