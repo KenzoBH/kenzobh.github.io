@@ -270,14 +270,14 @@
         }
 
             .carousel .carousel__item .demo-content {
-                width: 300px;
+                width: 200px;
                 height: 450px;
                 border-radius: 3px;
                 margin: 0 10px;
             }
 
                 .demo-content img {
-                    width: 60%;
+                    width: 80%;
                     margin-left: 50%;
                     transform: translateX(-50%);
                     margin-top: 15%;
@@ -286,7 +286,7 @@
                 .demo-content h1 {
                     font-family: var(--font1);
                     font-size: 125%;
-                    width: 60%;
+                    width: 80%;
                     margin-left: 50%;
                     transform: translateX(-50%);
                     color: white;
@@ -294,7 +294,7 @@
                 .demo-content h2 {
                     font-family: var(--font2);
                     font-size: 80%;
-                    width: 60%;
+                    width: 80%;
                     margin-left: 50%;
                     transform: translateX(-50%);
                     color: white;
@@ -303,7 +303,7 @@
                     font-family: var(--font2);
                     font-size: 80%;
                     color: var(--blue);
-                    width: 60%;
+                    width: 80%;
                     margin-left: 50%;
                     transform: translateX(-50%);
                 }
