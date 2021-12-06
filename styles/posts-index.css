@@ -135,68 +135,93 @@
                 }
             }
 
-
-.demo-container {
+#books{
+    padding: 100px 10% 100px 10%;
     display: flex;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
     background-color: black;
 }
 
-    .carousel {
-        overflow-x: auto;
-        margin: auto;
-        white-space: nowrap;
-        -webkit-overflow-scrolling: touch;
-        width: 80%;
-        height: 500px;
+    #books #bookstitle{
+        width: 50%;
+        margin-bottom: 50px;
+        font-family: var(--font1);
+        font-size: 30px;
+        color: white;
     }
 
-        .carousel .carousel__item {
-            display: inline-flex;
-            vertical-align: top;
+    .demo-container {
+        display: flex;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 50%;
+    }
+
+        .carousel {
+            overflow-x: auto;
+            white-space: nowrap;
+            -webkit-overflow-scrolling: touch;
+            height: 500px;
         }
 
-            .carousel .carousel__item .demo-content {
-                width: 200px;
-                height: 450px;
-                border-radius: 3px;
-                margin: 0 10px;
+            .carousel .carousel__item {
+                display: inline-flex;
+                vertical-align: top;
             }
 
-                .demo-content img {
-                    width: 80%;
-                    margin-left: 50%;
-                    transform: translateX(-50%);
-                    margin-top: 15%;
+                .carousel .carousel__item .demo-content {
+                    width: 200px;
+                    height: 450px;
                 }
 
-                .demo-content h1 {
-                    font-family: var(--font1);
-                    font-size: 125%;
-                    width: 80%;
-                    margin-left: 50%;
-                    transform: translateX(-50%);
-                    color: white;
-                }
-                .demo-content h2 {
-                    font-family: var(--font2);
-                    font-size: 80%;
-                    width: 80%;
-                    margin-left: 50%;
-                    transform: translateX(-50%);
-                    color: white;
-                }
-                .demo-content dt {
-                    font-family: var(--font2);
-                    font-size: 80%;
-                    color: var(--blue);
-                    width: 80%;
-                    margin-left: 50%;
-                    transform: translateX(-50%);
-                }            
+                    .demo-content img {
+                        width: 80%;
+                        margin-left: 50%;
+                        transform: translateX(-50%);
+                        margin-top: 15%;
+                    }
+
+                    .demo-content h1 {
+                        font-family: var(--font1);
+                        font-size: 125%;
+                        width: 80%;
+                        margin-left: 50%;
+                        transform: translateX(-50%);
+                        color: white;
+                    }
+                    .demo-content h2 {
+                        font-family: var(--font2);
+                        font-size: 80%;
+                        width: 80%;
+                        margin-left: 50%;
+                        transform: translateX(-50%);
+                        color: white;
+                    }
+                    .demo-content dt {
+                        font-family: var(--font2);
+                        font-size: 80%;
+                        color: var(--blue);
+                        width: 80%;
+                        margin-left: 50%;
+                        transform: translateX(-50%);
+                    }
+
+    @media (max-width: 800px) {
+        #books {
+            display: block;
+        }
+
+        #books #bookstitle {
+            width: 100%;
+        }
+
+        #books .demo-container {
+            width: 100%;
+        }
+
+    }
+                       
 
 #posts {
     background-color: #111111;
