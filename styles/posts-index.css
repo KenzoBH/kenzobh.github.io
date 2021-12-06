@@ -144,10 +144,20 @@
     #books #bookstitle{
         width: 50%;
         margin-bottom: 50px;
-        font-family: var(--font1);
-        font-size: 30px;
-        color: white;
+        padding-right: 20px;
     }
+
+        #books #bookstitle h2 {
+            font-family: var(--font1);
+            font-size: 30px;
+            color: white;
+            margin-bottom: 10px;
+        }
+
+        #books #bookstitle p {
+            font-family: var(--font3);
+            color: white;
+        }
 
     .demo-container {
         display: flex;
