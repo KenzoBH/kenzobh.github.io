@@ -206,6 +206,14 @@
                         margin-left: 50%;
                         transform: translateX(-50%);
                     }
+                
+                #actual_reading {
+                    background-color: white;
+                    
+                }
+                    #actual_reading h1, #actual_reading h2{
+                        color: black;
+                    }
 
     @media (max-width: 800px) {
         #books {
