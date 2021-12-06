@@ -184,23 +184,25 @@
 
                     .demo-content h1 {
                         font-family: var(--font1);
-                        font-size: 125%;
+                        font-size: 110%;
                         width: 80%;
                         margin-left: 50%;
                         transform: translateX(-50%);
                         color: white;
+                        white-space: pre-wrap;
                     }
                     .demo-content h2 {
                         font-family: var(--font2);
-                        font-size: 80%;
+                        font-size: 70%;
                         width: 80%;
                         margin-left: 50%;
                         transform: translateX(-50%);
                         color: white;
+                        white-space: pre-wrap;
                     }
                     .demo-content dt {
                         font-family: var(--font2);
-                        font-size: 80%;
+                        font-size: 70%;
                         color: var(--blue);
                         width: 80%;
                         margin-left: 50%;
