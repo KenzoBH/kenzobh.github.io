@@ -135,6 +135,55 @@
                 }
             }
 
+#playlists{
+    padding: 100px 10% 100px 10%;
+    display: flex;
+    background-color: black;
+    color: white;
+}
+
+    #playliststitle{
+        width: 50%;
+        margin-bottom: 50px;
+        padding-right: 20px;
+    }
+    
+        #playlists #playliststitle h2 {
+            font-family: var(--font1);
+            font-size: 30px;
+            color: white;
+            margin-bottom: 10px;
+        }
+
+        #playlists #playliststitle p {
+            font-family: var(--font3);
+            color: white;
+        }
+
+    #playlistsplayer {
+        display: flex;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 50%;
+    }
+
+@media (max-width: 800px) {
+    #playlists {
+        display: block;
+    }
+
+    #playlists #playliststitle {
+        width: 100%;
+    }
+
+    #playlists #playlistsplayer {
+        width: 100%;
+    }
+
+}
+
 #books{
     padding: 100px 10% 100px 10%;
     display: flex;
