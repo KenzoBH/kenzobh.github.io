@@ -102,37 +102,37 @@ html {
             }
         }
 
-    #banner footer {
+    #banner #header_contacts {
         border-top: var(--blue) 2px solid;
         margin: 0 5%;
         padding: 40px 0;
         font-family: var(--font2);
     }
 
-        #banner footer ul {
+        #banner #header_contacts ul {
             display: flex;
             justify-content: center;
         }
 
-            #banner footer ul li {
+            #banner #header_contacts ul li {
                 padding: 0 10%;
                 font-size: 80%;
             }
 
-            #banner footer ul li p {
+            #banner #header_contacts ul li p {
                 color: var(--blue)
             }
 
             @media (max-width: 800px) {
-                #banner footer {
+                #banner #header_contacts {
                     padding: 20px 0;
                 }
                 
-                #banner footer ul {
+                #banner #header_contacts ul {
                     display: block;
                 }
 
-                #banner footer ul li {
+                #banner #header_contacts ul li {
                     padding: 10px 5%;
                     font-size: 60%;
                 }
