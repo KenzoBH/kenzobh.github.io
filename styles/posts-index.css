@@ -138,7 +138,7 @@
 #playlists {
     padding: 100px 10% 100px 10%;
     display: flex;
-    background-color: black;
+    background-color: #111111;
     color: white;
 }
 
@@ -202,7 +202,7 @@
 #books{
     padding: 100px 10% 100px 10%;
     display: flex;
-    background-color: black;
+    background-color: #111111;
 }
 
     #books #bookstitle{
