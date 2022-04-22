@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Oswald:wght@700&family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="import" href="footer.html">
+    <script type="text/javascript" src='footer.js'></script>
 </head>
 
 <body>
@@ -34,7 +34,7 @@
             <p>
                 Data Boy at Shopee Brasil & President of IME Jr.<br>
                 Full of chococale, maths, literature and accumulated lessons.<br>
-                Statistics/USP, 18.
+                Statistics/USP, <script>document.write(getAge())</script>.
             </p>
         </div>
         <footer>
@@ -262,7 +262,7 @@
 
     </div>
 
-    <script src="footer.js"></script>
+    <script>footer()</script>
 
 </body>
 </html>
