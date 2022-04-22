@@ -1,4 +1,4 @@
-document.write('\
+document.write(`\
 <div id="footer-box">\
 \
     <div id="footer">\
@@ -20,9 +20,9 @@ document.write('\
         </div>\
 \
         <div id="footer-date">\
-            <p>2022</p>\
+            <p>${new Date().getFullYear()}</p>\
         </div>\
     </div>\
 \
 </div>\
-');
+`);
