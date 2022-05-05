@@ -118,10 +118,10 @@ header {
 
     @media (max-width: 800px) {
         #hero #title h1 {
-            font-size: 130%;
+            font-size: 170%;
         }
         #hero #title p {
-            font-size: 90%;
+            font-size: 80%;
         }
         #hero #contact {
             padding: 7.5px 0;
