@@ -40,7 +40,7 @@
         }
 
         #playlists #playliststitle li {
-            font-family: var(--font2);
+            font-family: var(--font3);
             font-size: 15px;
         }
 
@@ -63,20 +63,31 @@
         width: 50%;
     }
 
-@media (max-width: 800px) {
-    #playlists {
-        display: block;
-    }
+    @media (max-width: 800px) {
+        #playlists {
+            display: block;
+        }
 
-    #playlists #playliststitle {
-        width: 100%;
-    }
+        #playlists #playliststitle {
+            width: 100%;
+        }
+        #playlists #playliststitle h2 {
+            font-size: 150%;
+        }
+        #playlists #playliststitle p {
+            font-size: 80%;
+        }
+        #playlists #playliststitle li {
+            font-size: 80%;
+        }
+        #playlists #playliststitle a {
+            font-size: 120%;
+        }
 
-    #playlists #playlistsplayer {
-        width: 100%;
+        #playlists #playlistsplayer {
+            width: 100%;
+        }
     }
-
-}
 
 #books{
     padding: 100px 10% 100px 10%;
@@ -178,13 +189,17 @@
         #books #bookstitle {
             width: 100%;
         }
+        #books #bookstitle h2 {
+            font-size: 150%;
+        }
+        #books #bookstitle p {
+            font-size: 80%;
+        }
 
         #books .demo-container {
             width: 100%;
         }
-
-    }
-                       
+    }              
 
 #posts {
     background-color: #111111;
