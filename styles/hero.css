@@ -1,0 +1,128 @@
+:root {
+    --blue: #4392f1;
+    --grey: #fafafa;
+    --font1: "Oswald";
+    --font2: "Montserrat";
+    --font3: "Roboto";
+    --horizontal_margin: 7.5%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+a {
+    color: white;
+    transition: 0.2s
+}
+
+a:hover {
+    color: var(--blue);
+    transition: 0.2s;
+}
+
+header {
+    z-index: 1;
+    position: fixed;
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    background: black;
+    font-family: var(--font2);
+}
+
+    header #home {
+        margin-left: var(--horizontal_margin);
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        position: absolute;
+        font-size: 150%;
+    }
+
+    header #pages {
+        margin-right: var(--horizontal_margin);
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        position: absolute;
+        display: flex;
+    }
+
+        header #pages li {
+            text-align: center;
+            margin-left: 2vh;
+        }
+
+    @media (max-width: 800px) {
+        header #home {
+            font-size: 120%;
+        }
+        header #pages li {
+            font-size: 80%;
+        }
+    }
+
+#hero {
+    background: black;
+    height: 100vh;
+    padding: 0 var(--horizontal_margin);
+}
+
+    #hero #title {
+        top: 45%;
+        transform: translateY(-50%);
+        position: absolute;
+        width: 42.5%; /* (100% - horizontal_margin)/2 */
+    }
+
+        #hero #title h1 {
+            color: white;
+            font-family: var(--font1);
+        }
+
+        #hero #title p {
+            color: white;
+            text-align: left;
+            font-family: var(--font3);
+        }
+
+    #hero #contact {
+        bottom: 0;
+        position: absolute;
+        width: 85%; /* 100% - 2*horizontal_margin */
+        padding: 40px 0;
+        border-top: var(--blue) 2px solid;
+        font-family: var(--font2);
+    }
+
+        #hero #contact ul {
+            display: flex;
+            justify-content: center;
+        }
+
+            #hero #contact ul li {
+                padding: 0 10%;
+                font-size: 80%;
+            }
+
+                #hero #contact ul li p {
+                    color: var(--blue)
+                }
+
+    @media (max-width: 800px) {
+        #hero #contact {
+            padding: 20px 0;
+        }
+            
+        #hero #contact ul {
+            display: block;
+        }
+
+        #hero #contact ul li {
+            padding: 10px 5%;
+        }
+    }
