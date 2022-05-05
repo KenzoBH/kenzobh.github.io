@@ -58,6 +58,9 @@ header {
         }
 
     @media (max-width: 800px) {
+        header {
+            height: 10vh;
+        }
         header #home {
             font-size: 120%;
         }
@@ -114,15 +117,20 @@ header {
                 }
 
     @media (max-width: 800px) {
-        #hero #contact {
-            padding: 20px 0;
+        #hero #title h1 {
+            font-size: 130%;
         }
-            
+        #hero #title p {
+            font-size: 90%;
+        }
+        #hero #contact {
+            padding: 7.5px 0;
+        }   
         #hero #contact ul {
             display: block;
         }
-
         #hero #contact ul li {
             padding: 10px 5%;
+            font-size: 60%;
         }
     }
