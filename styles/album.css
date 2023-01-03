@@ -240,7 +240,7 @@
             margin-top: 5px;
         }
 
-        #shorts li img,#shorts li video {
+        #shorts li img, #shorts li video {
             width: 50%;
             -webkit-filter: grayscale(100%);
             filter: grayscale(100%);
