@@ -15,9 +15,10 @@
 }
 
 #playlists {
-    padding: 100px 10% 50px 10%;
+    padding: 100px 10% 0px 10%;
     display: flex;
-    background-color: #111111;
+    /* background-color: #111111; */
+    background-color: #000000;
     color: white;
 }
 
@@ -90,9 +91,10 @@
     }
 
 #books{
-    padding: 50px 10% 100px 10%;
+    padding: 50px 10% 0px 10%;
     display: flex;
-    background-color: #111111;
+    /* background-color: #111111; */
+    background-color: #000000;
 }
 
     #books #bookstitle{
@@ -201,55 +203,11 @@
         }
     }              
 
-#posts {
-    background-color: #111111;
-    padding: 50px 10%;
-    font-family: var(--font3);
-    color: white;
-}
-
-    #posts .list {
-        margin: 100px 0;
-    }
-
-    #posts .list li:hover {
-        background-color: #FAFAFA;
-        color: black;
-        transition: 0.2s;
-    }
-        #posts .list h2 {
-            margin-bottom: 20px;
-            font-family: var(--font1);
-            font-size: 30px;
-        }
-
-            #posts .list li {
-                background-color: black;
-                color: var(--blue);
-                padding: 40px 30px;
-                font-size: 17.5px;
-                margin-bottom: 30px;
-                transition: 0.2s;
-            }
-
-                #posts .list li p {
-                    margin-top: 5px;
-                    font-size: 15px;
-                    color: white;
-                    font-family: var(--font3);
-                    transition: 0.2s;
-                }
-
-                #posts .list li:hover p {
-                    color: black;
-                    transition: 0.2s;
-                }
-
 #shorts {
     background-color: black;
     color: white;
     font-family: var(--font3);
-    padding: 150px 10% 100px 10%;
+    padding: 50px 10% 50px 10%;
 }
 
     #shorts .year {
