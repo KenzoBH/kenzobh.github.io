@@ -18,11 +18,10 @@ function footer(){
             <div id="footer">\
                 <div id="footer-infos">\
                     <div>\
-                        <h2>Bruno Kenzo</h2>\
+                        <h2>Bruno Kenzo Hyodo</h2>\
                         <p>\
-                            IME-USP, Statistics<br>\
-                            Shopee BR & IME Jr<br>\
-                            brunokenzoh@gmail.com<br>\
+                            Shopee BR & USP<br>\
+                            São Paulo, Brazil<br>\
                             ${getAge()} yo\
                         </p>\
                     </div>\
