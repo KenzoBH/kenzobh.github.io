@@ -30,7 +30,7 @@ header {
     height: 10vh;
     width: 100%;
     display: flex;
-    background: black;
+    background: #000000AA;
     font-family: var(--font2);
 }
 
