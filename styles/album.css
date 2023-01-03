@@ -253,11 +253,12 @@
 }
 
     #shorts .year {
-        display: flex;
+        /* display: flex; */
+        display: block;
     }
 
     #shorts h2 {
-        width: 50%;
+        /* width: 50%; */
         margin-bottom: 50px;
         font-family: var(--font1);
         font-size: 30px;
@@ -265,7 +266,7 @@
     }
 
     #shorts .list {
-        width: 50%;
+        display: flex;
     }
 
     #shorts li {
@@ -278,7 +279,7 @@
         }
 
         #shorts li img {
-            width: 50%;
+            width: 25%;
             -webkit-filter: grayscale(100%);
             filter: grayscale(100%);
         }
