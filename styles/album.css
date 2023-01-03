@@ -14,6 +14,12 @@
     text-decoration: none;
 }
 
+#hero {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,1)), url(../images/background-index.png);
+    background-position: center center;
+    background-size: cover;
+}
+
 #playlists {
     padding: 100px 10% 0px 10%;
     display: flex;
