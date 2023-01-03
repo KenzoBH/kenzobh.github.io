@@ -15,7 +15,6 @@
 }
 
 #hero {
-    background-image: linear-gradient(to top, rgba(0,0,0,0), rgba(0,0,0,1)), linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,1)), url(../images/album-background.jpg);
     background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,1)), url(../images/album-background.jpg);
     background-position: center center;
     background-size: cover;
@@ -24,8 +23,7 @@
 #playlists {
     padding: 100px 10% 0px 10%;
     display: flex;
-    /* background-color: #111111; */
-    background-color: #000000;
+    background-color: black;
     color: white;
 }
 
@@ -100,8 +98,7 @@
 #books{
     padding: 50px 10% 0px 10%;
     display: flex;
-    /* background-color: #111111; */
-    background-color: #000000;
+    background-color: black;
 }
 
     #books #bookstitle{
