@@ -30,7 +30,6 @@
     #playliststitle {
         width: 50%;
         margin-bottom: 50px;
-        padding-right: 20px;
     }
     
         #playlists #playliststitle h2 {
@@ -242,8 +241,7 @@
 
         #shorts li img, #shorts li video {
             width: 50%;
-            -webkit-filter: grayscale(100%);
-            filter: grayscale(100%);
+            filter: contrast(90%) grayscale(10%);
         }
 
     #shorts li a {
@@ -270,7 +268,7 @@
 
             #shorts li img, #shorts li video {
                 width: 100%;
-                -webkit-filter: grayscale(100%);
-                filter: grayscale(100%);
+                filter: contrast(90%) grayscale(10%);
             }
+
     }
