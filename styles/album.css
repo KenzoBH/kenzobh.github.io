@@ -21,7 +21,7 @@
 }
 
 #playlists {
-    padding: 100px 10% 0px 10%;
+    padding: 100px 200px 0px 200px;
     display: flex;
     background-color: black;
     color: white;
@@ -71,6 +71,7 @@
     @media (max-width: 800px) {
         #playlists {
             display: block;
+            padding: 100px 30px 0px 30px;
         }
 
         #playlists #playliststitle {
@@ -95,7 +96,7 @@
     }
 
 #books{
-    padding: 50px 10% 0px 10%;
+    padding: 100px 200px 0px 200px;
     display: flex;
     background-color: black;
 }
@@ -189,6 +190,7 @@
     @media (max-width: 800px) {
         #books {
             display: block;
+            padding: 100px 30px 0px 30px;
         }
 
         #books #bookstitle {
@@ -207,10 +209,10 @@
     }              
 
 #shorts {
+    padding: 100px 200px 0px 200px;
     background-color: black;
     color: white;
     font-family: var(--font3);
-    padding: 50px 10% 50px 10%;
 }
 
     #shorts .year {
@@ -253,22 +255,26 @@
     }
 
     @media (max-width: 800px) {
-        #shorts .year {
-            display: block;
+        #shorts {
+            padding: 100px 30px 0px 30px;
         }
-
-        #shorts h2 {
-            width: 100%;
-        }
-
-        #shorts .list {
-            margin-left: 0;
-            width: 100%;
-        }
-
-            #shorts li img, #shorts li video {
-                width: 100%;
-                filter: contrast(90%) grayscale(10%);
+            
+            #shorts .year {
+                display: block;
             }
+
+            #shorts h2 {
+                width: 100%;
+            }
+
+            #shorts .list {
+                margin-left: 0;
+                width: 100%;
+            }
+
+                #shorts li img, #shorts li video {
+                    width: 100%;
+                    filter: contrast(90%) grayscale(10%);
+                }
 
     }
