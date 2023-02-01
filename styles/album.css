@@ -216,20 +216,20 @@
 }
 
     #shorts .year {
-        /* display: flex; */
         display: block;
     }
 
     #shorts h2 {
-        /* width: 50%; */
         margin-bottom: 10px;
         font-family: var(--font1);
         font-size: 30px;
         color: white;
+        
     }
 
     #shorts .list {
         display: flex;
+        width: 50%;
     }
 
     #shorts li {
