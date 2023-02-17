@@ -229,7 +229,7 @@
 
     #shorts .list {
         display: flex;
-        width: 50%;
+        width: 100%;
     }
 
     #shorts li {
@@ -242,7 +242,7 @@
         }
 
         #shorts li img, #shorts li video {
-            width: 50%;
+            width: 25%;
             filter: contrast(90%) grayscale(10%);
         }
 
