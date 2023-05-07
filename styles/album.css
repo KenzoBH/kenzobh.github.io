@@ -302,9 +302,12 @@
                 width: 100%;
             }
 
-                #shorts li img, #shorts li video {
+                #shorts li img, #shorts li .video_container video {
                     width: 100%;
-                    filter: contrast(90%) grayscale(10%);
+                }
+
+                #shorts li .video_container .mute_icon {
+                    left: 50%;
                 }
 
     }
