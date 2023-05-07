@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="styles/hero.css">
     <link rel="stylesheet" href="styles/footer.css">
     <script type="text/javascript" src='styles/footer.js'></script>
+    <script type="text/javascript" src='styles/video_unmute_function.js'></script>
     <link rel="stylesheet" href="styles/album.css">
 
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
@@ -17,7 +18,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Oswald:wght@700&family=Roboto:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
-
+    <script type="text/javascript" src='styles/video_unmute_function.js'></script>
     <header>
         <div id="home">
             <a href="index.html">@KenzoBH</a>
@@ -484,25 +485,37 @@
             <div class="list">
                 <ul>
                     <li>
-                        <video src="images/shorts/20230506.mp4" alt="" autoplay muted loop></video>
+                        <div class="video_container">
+                            <video src="images/shorts/20230506.mp4" onclick="toggle_mute(this)" autoplay muted loop></video>
+                            <div class="mute_icon"></div>
+                        </div>
                         <p>
                             Adidas shirt, Vans, black pants and my cup with my photo as a kiddo: my uniform to make history.
                         </p>
                         <dt>May 6, 2023</dt>
                     </li>
                     <li>
-                        <video src="images/shorts/20230429.mp4" alt="" autoplay muted loop></video>
+                        <div class="video_container">
+                            <video src="images/shorts/20230429.mp4" onclick="toggle_mute(this)" autoplay muted loop></video>
+                            <div class="mute_icon"></div>
+                        </div>
                         <p>
                             That's me and my best. Feliz aniversário, Mó.
                         </p>
                         <dt>April 29, 2023</dt>
                     </li>
                     <li>
-                        <img src="images/shorts/20230420.jpg" alt="">
+                        <div class="video_container">
+                            <video src="images/shorts/20230420.mp4" onclick="toggle_mute(this)" autoplay muted loop></video>
+                            <div class="mute_icon"></div>
+                        </div>
                         <dt>April 20, 2023</dt>
                     </li>
                     <li>
-                        <video src="images/shorts/20230419.mp4" alt="" autoplay muted loop></video>
+                        <div class="video_container">
+                            <video src="images/shorts/20230419.mp4" onclick="toggle_mute(this)" autoplay muted loop></video>
+                            <div class="mute_icon"></div>
+                        </div>
                         <p>
                             2 questions that got stuck in my mind these days:<br>
                             1. What do you think about giving books as a gift to someone?<br>
@@ -543,7 +556,10 @@
                         <dt>April 01, 2023</dt>
                     </li>
                     <li>
-                        <video src="images/shorts/20230325.mp4" alt="" autoplay muted loop></video>
+                        <div class="video_container">
+                            <video src="images/shorts/20230325.mp4" onclick="toggle_mute(this)" autoplay muted loop></video>
+                            <div class="mute_icon"></div>
+                        </div>
                         <dt>March 25, 2023</dt>
                     </li>
                     <li>
@@ -563,7 +579,10 @@
                         <dt>March 15, 2023</dt>
                     </li>
                     <li>
-                        <video src="images/shorts/20230311.mp4" alt="" autoplay muted loop></video>
+                        <div class="video_container">
+                            <video src="images/shorts/20230311.mp4" onclick="toggle_mute(this)" autoplay muted loop></video>
+                            <div class="mute_icon"></div>
+                        </div>
                         <p>
                             It's important to always keep close those who talks about greatness and happiness all the time. These people brings joy, and makes us grow. Talking to them is like clearing a cloudy sky. People should take life more lightly, you know? These problems should not cover the sunlight. Life is hard, but life is so good, man. Isn't it true?<br>
                             Is there any sadness after listening to <a href="https://youtu.be/mRP72Ib2e9I" target="_blank">this song</a>?
@@ -659,7 +678,10 @@
                         <dt>February 06, 2023</dt>
                     </li>
                     <li>
-                        <video src="images/shorts/20230203.mp4" alt="" autoplay muted loop></video>
+                        <div class="video_container">
+                            <video src="images/shorts/20230203.mp4" onclick="toggle_mute(this)" autoplay muted loop></video>
+                            <div class="mute_icon"></div>
+                        </div>
                         <p>
                             Lonely walk and reading - Fernando Sabino's chronicles - at the uni :)
                         </p>
@@ -741,7 +763,10 @@
                         <dt>January 15, 2023</dt>
                     </li>
                     <li>
-                        <video src="images/shorts/20230112.mp4" alt="" autoplay muted loop></video>
+                        <div class="video_container">
+                            <video src="images/shorts/20230112.mp4" onclick="toggle_mute(this)" autoplay muted loop></video>
+                            <div class="mute_icon"></div>
+                        </div>
                         <dt>January 12, 2023</dt>
                     </li>
                     <li>
@@ -803,7 +828,10 @@
                         <dt>December 13, 2022</dt>
                     </li>
                     <li>
-                        <video src="images/shorts/20221203.mp4" alt="" autoplay muted loop></video>
+                        <div class="video_container">
+                            <video src="images/shorts/20221203.mp4" onclick="toggle_mute(this)" autoplay muted loop></video>
+                            <div class="mute_icon"></div>
+                        </div>
                         <dt>December 03, 2022</dt>
                     </li>
                     <li>
@@ -827,7 +855,10 @@
                         <dt>November 06, 2022</dt>
                     </li>
                     <li>
-                        <video src="images/shorts/20221105.mp4" alt="" autoplay muted loop></video>
+                        <div class="video_container">
+                            <video src="images/shorts/20221105.mp4" onclick="toggle_mute(this)" autoplay muted loop></video>
+                            <div class="mute_icon"></div>
+                        </div>
                         <dt>November 05, 2022</dt>
                     </li>
                     <li>
