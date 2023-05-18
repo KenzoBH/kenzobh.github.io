@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="styles/footer.css">
     <script type="text/javascript" src='styles/footer.js'></script>
     <script type="text/javascript" src='styles/video_unmute_function.js'></script>
+    <script type="text/javascript" src='styles/lazy_loading.js'></script>
     <link rel="stylesheet" href="styles/album.css">
 
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
@@ -52,7 +53,7 @@
             </p>
         </div>
         <div id="playlistsplayer">
-            <iframe width="100%"  src="https://www.youtube.com/embed/videoseries?controls=0&amp;list=PLUvxQqnky1FdP7rgwqUIsyRYsbl4OW7QO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="100%" src="https://www.youtube.com/embed/videoseries?controls=0&amp;list=PLUvxQqnky1FdP7rgwqUIsyRYsbl4OW7QO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
     </div>
 
@@ -67,7 +68,7 @@
             <div class='carousel'>
                 <div class='carousel__item' id='actual_reading'>
                     <div class='demo-content'>
-                        <img src="images/books/pachinko.jpg" alt="">
+                        <img data="images/books/pachinko.jpg" alt="">
                         <h1>Pachinko</h1>
                         <h2>Min Jin Lee</h2>
                         <dt>Current reading</dt>
@@ -75,7 +76,7 @@
                 </div>
                 <div class='carousel__item' id='actual_reading'>
                     <div class='demo-content'>
-                        <img src="images/books/a_origem_das_especies.jpg" alt="">
+                        <img data="images/books/a_origem_das_especies.jpg" alt="">
                         <h1>A Origem das Espécies</h1>
                         <h2>Charles Darwin</h2>
                         <dt>Current reading</dt>
@@ -83,7 +84,7 @@
                 </div>
                 <div class='carousel__item' id='actual_reading'>
                     <div class='demo-content'>
-                        <img src="images/books/sonetos_de_camoes.jpg" alt="">
+                        <img data="images/books/sonetos_de_camoes.jpg" alt="">
                         <h1>Sonetos de Camões</h1>
                         <h2>Luís de Camões</h2>
                         <dt>Current reading</dt>
@@ -91,7 +92,7 @@
                 </div>
                 <div class='carousel__item'>
                     <div class='demo-content'>
-                        <img src="images/books/noites_brancas.jpg" alt="">
+                        <img data="images/books/noites_brancas.jpg" alt="">
                         <h1>Noites Brancas</h1>
                         <h2>Fiódor Dostoiévski</h2>
                         <dt>2020</dt>
@@ -99,7 +100,7 @@
                 </div>
                 <div class='carousel__item'>
                     <div class='demo-content'>
-                        <img src="images/books/livro_sobre_nada.jpg" alt="">
+                        <img data="images/books/livro_sobre_nada.jpg" alt="">
                         <h1>Livro Sobre Nada</h1>
                         <h2>Manoel de Barros</h2>
                         <dt>2020</dt>
@@ -107,7 +108,7 @@
                 </div>
                 <div class='carousel__item'>
                     <div class='demo-content'>
-                        <img src="images/books/o_menino_no_espelho.jpg" alt="">
+                        <img data="images/books/o_menino_no_espelho.jpg" alt="">
                         <h1>O Menino no Espelho</h1>
                         <h2>Fernando Sabino</h2>
                         <dt>2020</dt>
@@ -115,7 +116,7 @@
                 </div>
                 <div class='carousel__item'>
                     <div class='demo-content'>
-                        <img src="images/books/o_pequeno_principe.jpg" alt="">
+                        <img data="images/books/o_pequeno_principe.jpg" alt="">
                         <h1>O Pequeno Príncipe</h1>
                         <h2>Antoine de Saint-Exupéry</h2>
                         <dt>2020</dt>
@@ -123,7 +124,7 @@
                 </div>
                 <div class='carousel__item'>
                     <div class='demo-content'>
-                        <img src="images/books/sonhos_de_einstein.jpg" alt="">
+                        <img data="images/books/sonhos_de_einstein.jpg" alt="">
                         <h1>Sonhos de Einstein</h1>
                         <h2>Alan Lightman</h2>
                         <dt>2020</dt>
@@ -131,7 +132,7 @@
                 </div>
                 <div class='carousel__item'>
                     <div class='demo-content'>
-                        <img src="images/books/2001.jpg" alt="">
+                        <img data="images/books/2001.jpg" alt="">
                         <h1>2001: Uma Odisseia no Espaço</h1>
                         <h2>Arthur C. Clarke</h2>
                         <dt>2023</dt>
@@ -139,7 +140,7 @@
                 </div>
                 <div class='carousel__item'>
                     <div class='demo-content'>
-                        <img src="images/books/kafka_a_beira_mar.jpeg" alt="">
+                        <img data="images/books/kafka_a_beira_mar.jpeg" alt="">
                         <h1>Kafka à Beira-mar</h1>
                         <h2>Haruki Murakami</h2>
                         <dt>2022</dt>
@@ -147,7 +148,7 @@
                 </div>
                 <div class='carousel__item'>
                     <div class='demo-content'>
-                        <img src="images/books/campo_geral.jpg" alt="">
+                        <img data="images/books/campo_geral.jpg" alt="">
                         <h1>Campo Geral</h1>
                         <h2>João Guimarães Rosa</h2>
                         <dt>2020</dt>
@@ -155,7 +156,7 @@
                 </div>
                 <div class='carousel__item'>
                     <div class='demo-content'>
-                        <img src="images/books/o_livro_dos_abracos.jpg" alt="">
+                        <img data="images/books/o_livro_dos_abracos.jpg" alt="">
                         <h1>O Livro dos Abraços</h1>
                         <h2>Eduardo Galeano</h2>
                         <dt>2021</dt>
@@ -163,7 +164,7 @@
                 </div>
                 <div class='carousel__item'>
                     <div class='demo-content'>
-                        <img src="images/books/ensaio_sobre_a_cegueira.jpeg" alt="">
+                        <img data="images/books/ensaio_sobre_a_cegueira.jpeg" alt="">
                         <h1>Ensaio Sobre a Cegueira</h1>
                         <h2>José Saramago</h2>
                         <dt>2022</dt>
@@ -171,7 +172,7 @@
                 </div>
                 <div class='carousel__item'>
                     <div class='demo-content'>
-                        <img src="images/books/olhai_os_lirios_do_campo.jpg" alt="">
+                        <img data="images/books/olhai_os_lirios_do_campo.jpg" alt="">
                         <h1>Olhai os Lírios do Campo</h1>
                         <h2>Erico Verissimo</h2>
                         <dt>2020</dt>
@@ -179,7 +180,7 @@
                 </div>
                 <div class='carousel__item'>
                     <div class='demo-content'>
-                        <img src="images/books/flores_para_algernon.jpg" alt="">
+                        <img data="images/books/flores_para_algernon.jpg" alt="">
                         <h1>Flores para Algernon</h1>
                         <h2>Daniel Keyes</h2>
                         <dt>2021</dt>
@@ -187,7 +188,7 @@
                 </div>
                 <div class='carousel__item'>
                     <div class='demo-content'>
-                        <img src="images/books/a_metamorfose.jpg" alt="">
+                        <img data="images/books/a_metamorfose.jpg" alt="">
                         <h1>A Metamorfose</h1>
                         <h2>Franz Kafka</h2>
                         <dt>2020</dt>
@@ -195,7 +196,7 @@
                 </div>
                 <div class='carousel__item'>
                     <div class='demo-content'>
-                        <img src="images/books/helena.jpg" alt="">
+                        <img data="images/books/helena.jpg" alt="">
                         <h1>Helena</h1>
                         <h2>Machado de Assis</h2>
                         <dt>2023</dt>
@@ -203,7 +204,7 @@
                 </div>
                 <div class='carousel__item'>
                     <div class='demo-content'>
-                        <img src="images/books/naked_statistics.jpg" alt="">
+                        <img data="images/books/naked_statistics.jpg" alt="">
                         <h1>Naked Statistics</h1>
                         <h2>Charles Wheelan</h2>
                         <dt>2023</dt>
@@ -211,7 +212,7 @@
                 </div>
                 <div class='carousel__item'>
                     <div class='demo-content'>
-                        <img src="images/books/capitaes_da_areia.jpg" alt="">
+                        <img data="images/books/capitaes_da_areia.jpg" alt="">
                         <h1>Capitães da Areia</h1>
                         <h2>Jorge Amado</h2>
                         <dt>2023</dt>
@@ -219,7 +220,7 @@
                 </div>
                 <div class='carousel__item'>
                     <div class='demo-content'>
-                        <img src="images/books/a_companheira_de_viagem.jpg" alt="">
+                        <img data="images/books/a_companheira_de_viagem.jpg" alt="">
                         <h1>A Companheira de Viagem</h1>
                         <h2>Fernando Sabino</h2>
                         <dt>2023</dt>
@@ -227,7 +228,7 @@
                 </div>
                 <div class='carousel__item'>
                     <div class='demo-content'>
-                        <img src="images/books/quincas_borba.jpg" alt="">
+                        <img data="images/books/quincas_borba.jpg" alt="">
                         <h1>Quincas Borba</h1>
                         <h2>Machado de Assis</h2>
                         <dt>2019</dt>
@@ -235,7 +236,7 @@
                 </div>
                 <div class='carousel__item'>
                     <div class='demo-content'>
-                        <img src="images/books/o_romance_das_equacoes_algebricas.jpg" alt="">
+                        <img data="images/books/o_romance_das_equacoes_algebricas.jpg" alt="">
                         <h1>O Romance das Equações Algébricas</h1>
                         <h2>Gilberto G. Garbi</h2>
                         <dt>2020</dt>
@@ -243,7 +244,7 @@
                 </div>
                 <div class='carousel__item'>
                     <div class='demo-content'>
-                        <img src="images/books/angustia.jpg" alt="">
+                        <img data="images/books/angustia.jpg" alt="">
                         <h1>Angústia</h1>
                         <h2>Graciliano Ramos</h2>
                         <dt>2020</dt>
@@ -251,7 +252,7 @@
                 </div>
                 <div class='carousel__item'>
                     <div class='demo-content'>
-                        <img src="images/books/o_encontro_marcado.jpg" alt="">
+                        <img data="images/books/o_encontro_marcado.jpg" alt="">
                         <h1>O Encontro Marcado</h1>
                         <h2>Fernando Sabino</h2>
                         <dt>2020</dt>
@@ -259,7 +260,7 @@
                 </div>
                 <div class='carousel__item'>
                     <div class='demo-content'>
-                        <img src="images/books/o_velho_e_o_mar.jpg" alt="">
+                        <img data="images/books/o_velho_e_o_mar.jpg" alt="">
                         <h1>O Velho e o Mar</h1>
                         <h2>Ernest Hemingway</h2>
                         <dt>2020</dt>
@@ -267,7 +268,7 @@
                 </div>
                 <div class='carousel__item'>
                     <div class='demo-content'>
-                        <img src="images/books/memorias_inventadas.jpg" alt="">
+                        <img data="images/books/memorias_inventadas.jpg" alt="">
                         <h1>Memórias Inventadas</h1>
                         <h2>Manoel de Barros</h2>
                         <dt>2022</dt>
@@ -275,7 +276,7 @@
                 </div>
                 <div class='carousel__item'>
                     <div class='demo-content'>
-                        <img src="images/books/o_alienista.jpg" alt="">
+                        <img data="images/books/o_alienista.jpg" alt="">
                         <h1>O Alienista</h1>
                         <h2>Machado de Assis</h2>
                         <dt>2020</dt>
@@ -283,7 +284,7 @@
                 </div>
                 <div class='carousel__item'>
                     <div class='demo-content'>
-                        <img src="images/books/veronika_decide_morrer.jpg" alt="">
+                        <img data="images/books/veronika_decide_morrer.jpg" alt="">
                         <h1>Veronika Decide Morrer</h1>
                         <h2>Paulo Coelho</h2>
                         <dt>2021</dt>
@@ -291,7 +292,7 @@
                 </div>
                 <div class='carousel__item'>
                     <div class='demo-content'>
-                        <img src="images/books/meu_quintal_e_maior_que_o_mundo.jpg" alt="">
+                        <img data="images/books/meu_quintal_e_maior_que_o_mundo.jpg" alt="">
                         <h1>Meu Quintal é Maior do que o Mundo</h1>
                         <h2>Manoel de Barros</h2>
                         <dt>2020</dt>
@@ -299,7 +300,7 @@
                 </div>
                 <div class='carousel__item'>
                     <div class='demo-content'>
-                        <img src="images/books/memorias_postumas_de_bras_cubas.jpg" alt="">
+                        <img data="images/books/memorias_postumas_de_bras_cubas.jpg" alt="">
                         <h1>Memórias Póstumas de Brás Cubas</h1>
                         <h2>Machado de Assis</h2>
                         <dt>2020</dt>
@@ -307,7 +308,7 @@
                 </div>
                 <div class='carousel__item'>
                     <div class='demo-content'>
-                        <img src="images/books/claro_enigma.jpg" alt="">
+                        <img data="images/books/claro_enigma.jpg" alt="">
                         <h1>Claro Enigma</h1>
                         <h2>Carlos Drummond de Andrade</h2>
                         <dt>2020</dt>
@@ -315,7 +316,7 @@
                 </div>
                 <div class='carousel__item'>
                     <div class='demo-content'>
-                        <img src="images/books/romeu_e_julieta.jpg" alt="">
+                        <img data="images/books/romeu_e_julieta.jpg" alt="">
                         <h1>Romeu e Julieta</h1>
                         <h2>William Shakespeare</h2>
                         <dt>2020</dt>
@@ -323,7 +324,7 @@
                 </div>
                 <div class='carousel__item'>
                     <div class='demo-content'>
-                        <img src="images/books/o_andar_do_bebado.jpg" alt="">
+                        <img data="images/books/o_andar_do_bebado.jpg" alt="">
                         <h1>O Andar do Bêbado</h1>
                         <h2>Leonard Mlodinow</h2>
                         <dt>2020</dt>
@@ -331,7 +332,7 @@
                 </div>
                 <div class='carousel__item'>
                     <div class='demo-content'>
-                        <img src="images/books/quarto_de_despejo.jpg" alt="">
+                        <img data="images/books/quarto_de_despejo.jpg" alt="">
                         <h1>Quarto de Despejo</h1>
                         <h2>Carolina Maria de Jesus</h2>
                         <dt>2023</dt>
@@ -339,7 +340,7 @@
                 </div>
                 <div class='carousel__item'>
                     <div class='demo-content'>
-                        <img src="images/books/a_revolucao_dos_bichos.jpg" alt="">
+                        <img data="images/books/a_revolucao_dos_bichos.jpg" alt="">
                         <h1>A Revolução dos Bichos</h1>
                         <h2>George Orwell</h2>
                         <dt>2020</dt>
@@ -347,7 +348,7 @@
                 </div>
                 <div class='carousel__item'>
                     <div class='demo-content'>
-                        <img src="images/books/o_grande_mentecapto.jpg" alt="">
+                        <img data="images/books/o_grande_mentecapto.jpg" alt="">
                         <h1>O Grande Mentecapto</h1>
                         <h2>Fernando Sabino</h2>
                         <dt>2022</dt>
@@ -355,7 +356,7 @@
                 </div>
                 <div class='carousel__item'>
                     <div class='demo-content'>
-                        <img src="images/books/o_conto_da_ilha_desconhecida.jpeg" alt="">
+                        <img data="images/books/o_conto_da_ilha_desconhecida.jpeg" alt="">
                         <h1>O Conto da Ilha Desconhecida</h1>
                         <h2>José Saramago</h2>
                         <dt>2022</dt>
@@ -363,7 +364,7 @@
                 </div>
                 <div class='carousel__item'>
                     <div class='demo-content'>
-                        <img src="images/books/como_mentir_com_estatistica.jpg" alt="">
+                        <img data="images/books/como_mentir_com_estatistica.jpg" alt="">
                         <h1>Como Mentir com Estatística</h1>
                         <h2>Darrell Huff</h2>
                         <dt>2020</dt>
@@ -371,7 +372,7 @@
                 </div>
                 <div class='carousel__item'>
                     <div class='demo-content'>
-                        <img src="images/books/utopia.jpg" alt="">
+                        <img data="images/books/utopia.jpg" alt="">
                         <h1>Utopia</h1>
                         <h2>Thomas More</h2>
                         <dt>2022</dt>
@@ -379,7 +380,7 @@
                 </div>
                 <div class='carousel__item'>
                     <div class='demo-content'>
-                        <img src="images/books/sobre_a_brevidade_da_vida.jpg" alt="">
+                        <img data="images/books/sobre_a_brevidade_da_vida.jpg" alt="">
                         <h1>Sobre a Brevidade da Vida</h1>
                         <h2>Sêneca</h2>
                         <dt>2020</dt>
@@ -387,7 +388,7 @@
                 </div>
                 <div class='carousel__item'>
                     <div class='demo-content'>
-                        <img src="images/books/a_morte_de_ivan_ilitch.jpg" alt="">
+                        <img data="images/books/a_morte_de_ivan_ilitch.jpg" alt="">
                         <h1>A Morte de Ivan Ilitch</h1>
                         <h2>Lev Tolstói</h2>
                         <dt>2020</dt>
@@ -395,7 +396,7 @@
                 </div>
                 <div class='carousel__item'>
                     <div class='demo-content'>
-                        <img src="images/books/tio_petros_e_a_conjectura_de_goldbach.jpg" alt="">
+                        <img data="images/books/tio_petros_e_a_conjectura_de_goldbach.jpg" alt="">
                         <h1>Tio Petros e a Conjectura de Goldbach</h1>
                         <h2>Apostolos Doxiadis</h2>
                         <dt>2020</dt>
@@ -403,7 +404,7 @@
                 </div>
                 <div class='carousel__item'>
                     <div class='demo-content'>
-                        <img src="images/books/bartleby_o_escrivao.jpg" alt="">
+                        <img data="images/books/bartleby_o_escrivao.jpg" alt="">
                         <h1>Bartleby, o Escrivão</h1>
                         <h2>Herman Melville</h2>
                         <dt>2020</dt>
@@ -411,7 +412,7 @@
                 </div>
                 <div class='carousel__item'>
                     <div class='demo-content'>
-                        <img src="images/books/o_cortico.jpg" alt="">
+                        <img data="images/books/o_cortico.jpg" alt="">
                         <h1>O Cortiço</h1>
                         <h2>Aluísio Azevedo</h2>
                         <dt>2023</dt>
@@ -419,7 +420,7 @@
                 </div>
                 <div class='carousel__item'>
                     <div class='demo-content'>
-                        <img src="images/books/a_hora_da_estrela.jpg" alt="">
+                        <img data="images/books/a_hora_da_estrela.jpg" alt="">
                         <h1>A Hora da Estrela</h1>
                         <h2>Clarice Lispector</h2>
                         <dt>2021</dt>
@@ -427,7 +428,7 @@
                 </div>
                 <div class='carousel__item'>
                     <div class='demo-content'>
-                        <img src="images/books/flatland.jpg" alt="">
+                        <img data="images/books/flatland.jpg" alt="">
                         <h1>Flatland</h1>
                         <h2>Edwin A. Abbott</h2>
                         <dt>2023</dt>
@@ -435,7 +436,7 @@
                 </div>
                 <div class='carousel__item'>
                     <div class='demo-content'>
-                        <img src="images/books/tres_ratos_cegos_e_outros_contos.jpg" alt="">
+                        <img data="images/books/tres_ratos_cegos_e_outros_contos.jpg" alt="">
                         <h1>Três Ratos Cegos e Outros Contos</h1>
                         <h2>Agatha Christie</h2>
                         <dt>2023</dt>
@@ -443,7 +444,7 @@
                 </div>
                 <div class='carousel__item'>
                     <div class='demo-content'>
-                        <img src="images/books/o_estrangeiro.jpg" alt="">
+                        <img data="images/books/o_estrangeiro.jpg" alt="">
                         <h1>O Estrangeiro</h1>
                         <h2>Albert Camus</h2>
                         <dt>2020</dt>
@@ -451,7 +452,7 @@
                 </div>
                 <div class='carousel__item'>
                     <div class='demo-content'>
-                        <img src="images/books/nove_noites.jpg" alt="">
+                        <img data="images/books/nove_noites.jpg" alt="">
                         <h1>Nove Noites</h1>
                         <h2>Bernardo Carvalho</h2>
                         <dt>2020</dt>
@@ -459,7 +460,7 @@
                 </div>
                 <div class='carousel__item'>
                     <div class='demo-content'>
-                        <img src="images/books/memorias_do_subsolo.jpg" alt="">
+                        <img data="images/books/memorias_do_subsolo.jpg" alt="">
                         <h1>Memórias do Subsolo</h1>
                         <h2>Fiódor Dostoiévski</h2>
                         <dt>2021</dt>
@@ -467,7 +468,7 @@
                 </div>
                 <div class='carousel__item'>
                     <div class='demo-content'>
-                        <img src="images/books/o_bem_amado.jpg" alt="">
+                        <img data="images/books/o_bem_amado.jpg" alt="">
                         <h1>O Bem-amado</h1>
                         <h2>Dias Gomes</h2>
                         <dt>2018</dt>
@@ -486,7 +487,7 @@
                 <ul>
                     <li>
                         <div class="video_container">
-                            <video src="images/shorts/20230507.mp4" onclick="toggle_mute(this)" autoplay muted loop></video>
+                            <video data="images/shorts/20230507.mp4" onclick="toggle_mute(this)" autoplay muted loop></video>
                             <div class="mute_icon"></div>
                         </div>
                         <p>
@@ -496,7 +497,7 @@
                     </li>
                     <li>
                         <div class="video_container">
-                            <video src="images/shorts/20230506.mp4" onclick="toggle_mute(this)" autoplay muted loop></video>
+                            <video data="images/shorts/20230506.mp4" onclick="toggle_mute(this)" autoplay muted loop></video>
                             <div class="mute_icon"></div>
                         </div>
                         <p>
@@ -506,7 +507,7 @@
                     </li>
                     <li>
                         <div class="video_container">
-                            <video src="images/shorts/20230429.mp4" onclick="toggle_mute(this)" autoplay muted loop></video>
+                            <video data="images/shorts/20230429.mp4" onclick="toggle_mute(this)" autoplay muted loop></video>
                             <div class="mute_icon"></div>
                         </div>
                         <p>
@@ -516,7 +517,7 @@
                     </li>
                     <li>
                         <div class="video_container">
-                            <video src="images/shorts/20230419.mp4" onclick="toggle_mute(this)" autoplay muted loop></video>
+                            <video data="images/shorts/20230419.mp4" onclick="toggle_mute(this)" autoplay muted loop></video>
                             <div class="mute_icon"></div>
                         </div>
                         <p>
@@ -536,7 +537,7 @@
                         <dt>April 16, 2023</dt>
                     </li>
                     <li>
-                        <img src="images/shorts/20230412.jpg" alt="">
+                        <img data="images/shorts/20230412.jpg" alt="">
                         <dt>April 12, 2023</dt>
                     </li>
                     <li>
@@ -560,7 +561,7 @@
                     </li>
                     <li>
                         <div class="video_container">
-                            <video src="images/shorts/20230325.mp4" onclick="toggle_mute(this)" autoplay muted loop></video>
+                            <video data="images/shorts/20230325.mp4" onclick="toggle_mute(this)" autoplay muted loop></video>
                             <div class="mute_icon"></div>
                         </div>
                         <dt>March 25, 2023</dt>
@@ -578,7 +579,7 @@
                         <dt>March 19, 2023</dt>
                     </li>
                     <li>
-                        <img src="images/shorts/20230315.jpg" alt="">
+                        <img data="images/shorts/20230315.jpg" alt="">
                         <dt>March 15, 2023</dt>
                     </li>
                     <li>
@@ -609,49 +610,49 @@
                         <dt>March 03, 2023</dt>
                     </li>
                     <li>
-                        <img src="images/shorts/20230301.jpg" alt="">
+                        <img data="images/shorts/20230301.jpg" alt="">
                         <p>
                             It's been a while since I took my Mom out to dinner. And I remembered why this is so important.
                         </p>
                         <dt>March 01, 2023</dt>
                     </li>
                     <li>
-                        <img src="images/shorts/20230225.jpg" alt="">
+                        <img data="images/shorts/20230225.jpg" alt="">
                         <p>
                             QUE RESENHA.
                         </p>
                         <dt>February 25, 2023</dt>
                     </li>
                     <li>
-                        <img src="images/shorts/20230221.jpg" alt="">
+                        <img data="images/shorts/20230221.jpg" alt="">
                         <p>
                             UP TO DATE.
                         </p>
                         <dt>February 21, 2023</dt>
                     </li>
                     <li>
-                        <img src="images/shorts/20230220.jpg" alt="">
+                        <img data="images/shorts/20230220.jpg" alt="">
                         <p>
                             HAHAHAHAHAHAHAHAHAHAHAHA
                         </p>
                         <dt>February 20, 2023</dt>
                     </li>
                     <li>
-                        <img src="images/shorts/20230219.jpg" alt="">
+                        <img data="images/shorts/20230219.jpg" alt="">
                         <p>
                             I discovered that I'm addicted to a chitchat, a small talk, a gossip, an idle talk, a blab.
                         </p>
                         <dt>February 19, 2023</dt>
                     </li>
                     <li>
-                        <img src="images/shorts/20230218.jpg" alt="">
+                        <img data="images/shorts/20230218.jpg" alt="">
                         <p>
                             One is mine and the other one is from Sofia, my 9-year-old version. It's up to you to know whose is which.
                         </p>
                         <dt>February 18, 2023</dt>
                     </li>
                     <li>
-                        <img src="images/shorts/20230213.jpg" alt="">
+                        <img data="images/shorts/20230213.jpg" alt="">
                         <p>
                             I miss going fishing with you, Dad. I must be terrible at it XD
                         </p>
@@ -664,7 +665,7 @@
                         <dt>February 12, 2023</dt>
                     </li>
                     <li>
-                        <img src="images/shorts/20230210.jpg" alt="">
+                        <img data="images/shorts/20230210.jpg" alt="">
                         <p>
                             💅🏻
                         </p>
@@ -678,7 +679,7 @@
                     </li>
                     <li>
                         <div class="video_container">
-                            <video src="images/shorts/20230203.mp4" onclick="toggle_mute(this)" autoplay muted loop></video>
+                            <video data="images/shorts/20230203.mp4" onclick="toggle_mute(this)" autoplay muted loop></video>
                             <div class="mute_icon"></div>
                         </div>
                         <p>
@@ -687,14 +688,14 @@
                         <dt>February 03, 2023</dt>
                     </li>
                     <li>
-                        <img src="images/shorts/20230202.jpg" alt="">
+                        <img data="images/shorts/20230202.jpg" alt="">
                         <p>
                             人生です                            
                         </p>
                         <dt>February 02, 2023</dt>
                     </li>
                     <li>
-                        <img src="images/shorts/20230201.jpg" alt="">
+                        <img data="images/shorts/20230201.jpg" alt="">
                         <p>
                             It's been a long time since then. 5 years ago I had this hair and went to the first day of high school, and it's already far from today - even if it doesn't seem for me.<br>
                             Anyway, it's February/2023 already.
@@ -702,7 +703,7 @@
                         <dt>February 01, 2023</dt>
                     </li>
                     <li>
-                        <img src="images/shorts/20230126.jpg" alt="">
+                        <img data="images/shorts/20230126.jpg" alt="">
                         <dt>January 26, 2023</dt>
                     </li>
                     <li>
@@ -725,7 +726,7 @@
                         <dt>January 18, 2023</dt>
                     </li>
                     <li>
-                        <img src="images/shorts/20230117.jpeg" alt="">
+                        <img data="images/shorts/20230117.jpeg" alt="">
                         <p>
                             Lost the opportunity to put "Kenzika".
                         </p>
@@ -763,27 +764,27 @@
                     </li>
                     <li>
                         <div class="video_container">
-                            <video src="images/shorts/20230112.mp4" onclick="toggle_mute(this)" autoplay muted loop></video>
+                            <video data="images/shorts/20230112.mp4" onclick="toggle_mute(this)" autoplay muted loop></video>
                             <div class="mute_icon"></div>
                         </div>
                         <dt>January 12, 2023</dt>
                     </li>
                     <li>
-                        <img src="images/shorts/20230110.jpg" alt="">
+                        <img data="images/shorts/20230110.jpg" alt="">
                         <p>
                             Rainy day.
                         </p>
                         <dt>January 10, 2023</dt>
                     </li>
                     <li>
-                        <a href="https://www.youtube.com/watch?v=5YfAHy7izA0" target="_blank"><img src="images/shorts/20230107.jpg" alt=""></a>
+                        <a href="https://www.youtube.com/watch?v=5YfAHy7izA0" target="_blank"><img data="images/shorts/20230107.jpg" alt=""></a>
                         <p>
                             cold.
                         </p>
                         <dt>January 07, 2023</dt>
                     </li>
                     <li>
-                        <img src="images/shorts/20230105.jpg" alt="">
+                        <img data="images/shorts/20230105.jpg" alt="">
                         <p>
                             I think that <a href="https://www.youtube.com/watch?v=COz9lDCFHjw" target="_blank">Passionfruit by Drake</a> is my favorite song. I don't like Drake's songs that much, but this one gives me so many chills.<br>
                             I still remember how I met this song, back in 2017, through <a href="https://www.youtube.com/watch?v=zqoj_3r9oqg" target="_blank">a Paramore cover</a> - which is a masterpiece, also.<br>
@@ -801,7 +802,7 @@
                         <dt>January 04, 2023</dt>
                     </li>
                     <li>
-                        <img src="images/shorts/20230103.jpg" alt="">
+                        <img data="images/shorts/20230103.jpg" alt="">
                         <p>
                             blablabla
                         </p>
@@ -816,11 +817,11 @@
             <div class="list">
                 <ul>
                     <li>
-                        <img src="images/shorts/20221215.jpg" alt="">
+                        <img data="images/shorts/20221215.jpg" alt="">
                         <dt>December 15, 2022</dt>
                     </li>
                     <li>
-                        <img src="images/shorts/20221213.jpg" alt="">
+                        <img data="images/shorts/20221213.jpg" alt="">
                         <p>
                             @Shopito
                         </p>
@@ -828,7 +829,7 @@
                     </li>
                     <li>
                         <div class="video_container">
-                            <video src="images/shorts/20221203.mp4" onclick="toggle_mute(this)" autoplay muted loop></video>
+                            <video data="images/shorts/20221203.mp4" onclick="toggle_mute(this)" autoplay muted loop></video>
                             <div class="mute_icon"></div>
                         </div>
                         <dt>December 03, 2022</dt>
@@ -855,13 +856,13 @@
                     </li>
                     <li>
                         <div class="video_container">
-                            <video src="images/shorts/20221105.mp4" onclick="toggle_mute(this)" autoplay muted loop></video>
+                            <video data="images/shorts/20221105.mp4" onclick="toggle_mute(this)" autoplay muted loop></video>
                             <div class="mute_icon"></div>
                         </div>
                         <dt>November 05, 2022</dt>
                     </li>
                     <li>
-                        <img src="images/shorts/20221029.jpg" alt="">
+                        <img data="images/shorts/20221029.jpg" alt="">
                         <dt>October 29, 2022</dt>
                     </li>
                     <li>
@@ -872,19 +873,19 @@
                         <dt>October 17, 2022</dt>
                     </li>
                     <li>
-                        <img src="images/shorts/20220925.jpg" alt="">
+                        <img data="images/shorts/20220925.jpg" alt="">
                         <dt>September 25, 2022</dt>
                     </li>
                     <li>
-                        <img src="images/shorts/20220924.jpg" alt="">
+                        <img data="images/shorts/20220924.jpg" alt="">
                         <dt>September 24, 2022</dt>
                     </li>
                     <li>
-                        <img src="images/shorts/20220912.jpg" alt="">
+                        <img data="images/shorts/20220912.jpg" alt="">
                         <dt>September 12, 2022</dt>
                     </li>
                     <li>
-                        <img src="images/shorts/20220827.jpg" alt="">
+                        <img data="images/shorts/20220827.jpg" alt="">
                         <dt>August 27, 2022</dt>
                     </li>
                     <li>
@@ -927,7 +928,7 @@
                         <dt>May 29, 2022</dt>
                     </li>
                     <li>
-                        <img src="images/shorts/20220506.jpeg" alt="">
+                        <img data="images/shorts/20220506.jpeg" alt="">
                         <dt>May 06, 2022</dt>
                     </li>
                     <li>
@@ -956,7 +957,7 @@
                         <dt>March 24, 2022</dt>
                     </li>
                     <li>
-                        <img src="images/shorts/20220319.jpeg" alt="">
+                        <img data="images/shorts/20220319.jpeg" alt="">
                         <p>
                             Acabou a minha primeira semana presencial na universidade. Sobrevivi :)
                         </p>
@@ -973,7 +974,7 @@
                         <dt>March 03, 2022</dt>
                     </li>
                     <li>
-                        <a href="https://twitter.com/blyric_" target="_blank"><img src="images/shorts/20220301.jpeg" alt=""></a>
+                        <a href="https://twitter.com/blyric_" target="_blank"><img data="images/shorts/20220301.jpeg" alt=""></a>
                         <p>
                             Follow <a href="https://twitter.com/blyric_" target="_blank">BLYRIC!</a>
                         </p>
@@ -984,12 +985,12 @@
                         <dt>February 28, 2022</dt>
                     </li>
                     <li>
-                        <a href="https://99jobs.com/shopee/jobs/211782-shopee-trainee-program?utm_source=https://99jobs.com/shopeetraineeprogram2022" target="_blank"><img src="images/shorts/20220222.png" alt=""></a>
+                        <a href="https://99jobs.com/shopee/jobs/211782-shopee-trainee-program?utm_source=https://99jobs.com/shopeetraineeprogram2022" target="_blank"><img data="images/shorts/20220222.png" alt=""></a>
                         <p>Shopee BR tem vagas pra Trainee! Let's go</p>
                         <dt>February 22, 2022</dt>
                     </li>
                     <li>
-                        <img src="images/shorts/20220219.jpg" alt="">
+                        <img data="images/shorts/20220219.jpg" alt="">
                         <dt>February 19, 2022</dt>
                     </li>
                     <li>
@@ -1048,7 +1049,7 @@
                         <dt>December 20, 2021</dt>
                     </li>
                     <li>
-                        <img src="images/shorts/20211219.jpg" alt="">
+                        <img data="images/shorts/20211219.jpg" alt="">
                         <dt>December 19, 2021</dt>
                     </li>
                     <li>
@@ -1088,7 +1089,7 @@
                         <dt>November 30, 2021</dt>
                     </li>
                     <li>
-                        <img src="images/shorts/20211129.jpg" alt="">
+                        <img data="images/shorts/20211129.jpg" alt="">
                         <p>
                             Atualmente, estou lendo "O Livro dos Abraços", do Eduardo Galeano. É um livro muito fofo.<br>
                             Eu conheci ele quando uma cantora que eu gosto falar super bem dele.<br>
@@ -1124,14 +1125,14 @@
                         <dt>September 20, 2021</dt>
                     </li>
                     <li>
-                        <img src="images/shorts/20210912.png" alt="">
+                        <img data="images/shorts/20210912.png" alt="">
                         <p>
                             Noites Brancas, do Dostoiévski, é um dos meus livros favoritos. Quem me dera poder esquecer e ler de novo como se fosse pela primeira vez.
                         </p>
                         <dt>September 12, 2021</dt>
                     </li>
                     <li>
-                        <img src="images/shorts/20210904.jpeg" class="small" alt="">
+                        <img data="images/shorts/20210904.jpeg" class="small" alt="">
                         <p>
                             Eu amo trabalhar, socorro 🧡
                         </p>
@@ -1142,7 +1143,7 @@
                         <dt>July 27, 2021</dt>
                     </li>
                     <li>
-                        <img src="images/shorts/20210719.jpeg" alt="">
+                        <img data="images/shorts/20210719.jpeg" alt="">
                         <p>
                             Tive a última aula de Cálculo I hoje :c<br>
                             A gente preparou uma surpresa pra professora hoje - ela ficou bem felizinha :)
@@ -1220,7 +1221,7 @@
                         <dt>June 10, 2021</dt>
                     </li>
                     <li>
-                        <img src="images/shorts/20210608.png" alt="">
+                        <img data="images/shorts/20210608.png" alt="">
                         <p>
                             Descobri que preciso de 18 commits pro quadradinho no meu GitHub ficar com o verde mais escuro. Triste. Não façam 96 commits em um dia.
                         </p>
