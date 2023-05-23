@@ -224,7 +224,6 @@
         font-family: var(--font1);
         font-size: 30px;
         color: white;
-        
     }
 
     #shorts .list {
@@ -247,7 +246,7 @@
         }
 
             #shorts li img, #shorts li .video_container video {
-                width: 25%;
+                width: 25vw;
                 filter: contrast(90%) grayscale(10%);
                 position: relative;
                 object-fit: cover;
