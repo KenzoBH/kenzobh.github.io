@@ -96,118 +96,67 @@
         }
     }
 
-#books{
-    padding: 100px 200px 0px 200px;
+.lists{
+    padding: 10px 200px 0px 200px;
     display: flex;
     background-color: black;
+
+    &[open] {
+        .lists_title:after {
+            content: '-';
+        }
+    }
 }
 
-    #books #bookstitle{
-        width: 50%;
-        margin-bottom: 50px;
-        padding-right: 20px;
+    .lists .lists_title {
+        padding: 5%;
+        color: black;
+        font-family: var(--font3);
+        background-color: white;
+        cursor: pointer;
+        position: relative;
+
+        &:after{
+            content: '+';
+            position: absolute;
+            right: 0;
+            padding-right: 5%;
+        }
+
     }
 
-        #books #bookstitle h2 {
-            font-family: var(--font1);
-            font-size: 30px;
-            color: white;
+    .lists .lists_title:hover {
+        background-color: #EEEEEE;
+    }
+
+    .lists .lists_list {
+        padding: 5%;
+        color: black;
+        font-family: var(--font3);
+        background-color: white;
+    }
+
+        .lists .lists_list li {
+            font-family: var(--font3);
+            font-size: 10px;
             margin-bottom: 10px;
         }
 
-        #books #bookstitle p {
-            font-family: var(--font3);
-            color: white;
-        }
-
-    .demo-container {
-        display: flex;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        width: 50%;
-    }
-
-        .carousel {
-            overflow-x: auto;
-            white-space: nowrap;
-            -webkit-overflow-scrolling: touch;
-            height: 400px;
-        }
-
-            .carousel .carousel__item {
-                display: inline-flex;
-                vertical-align: top;
+            .lists .lists_list li h1{
+                font-family: var(--font1);
+                font-size: 10px;
+            }
+            .lists .lists_list li h2{
+                font-family: var(--font3);
+                font-size: 10px;
             }
 
-                .carousel .carousel__item .demo-content {
-                    width: 200px;
-                    height: 400px;
-                }
-
-                    .demo-content img {
-                        width: 80%;
-                        margin-left: 50%;
-                        transform: translateX(-50%);
-                        margin-top: 15%;
-                    }
-
-                    .demo-content h1 {
-                        font-family: var(--font1);
-                        font-size: 110%;
-                        width: 80%;
-                        margin-left: 50%;
-                        transform: translateX(-50%);
-                        color: white;
-                        white-space: pre-wrap;
-                    }
-                    .demo-content h2 {
-                        font-family: var(--font2);
-                        font-size: 70%;
-                        width: 80%;
-                        margin-left: 50%;
-                        transform: translateX(-50%);
-                        color: white;
-                        white-space: pre-wrap;
-                    }
-                    .demo-content dt {
-                        font-family: var(--font2);
-                        font-size: 70%;
-                        color: var(--blue);
-                        width: 80%;
-                        margin-left: 50%;
-                        transform: translateX(-50%);
-                    }
-                
-                #actual_reading {
-                    background-color: white;
-                }
-
-                    #actual_reading h1, #actual_reading h2{
-                        color: black;
-                    }
-
     @media (max-width: 800px) {
-        #books {
+        .lists {
             display: block;
             padding: 100px 30px 0px 30px;
         }
-
-        #books #bookstitle {
-            width: 100%;
-        }
-        #books #bookstitle h2 {
-            font-size: 150%;
-        }
-        #books #bookstitle p {
-            font-size: 80%;
-        }
-
-        #books .demo-container {
-            width: 100%;
-        }
-    }              
+    }
 
 #shorts {
     padding: 100px 200px 0px 200px;
