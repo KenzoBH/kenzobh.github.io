@@ -138,17 +138,16 @@
 
         .lists .lists_list p, .lists .lists_list li {
             font-family: var(--font3);
-            font-size: 10px;
             margin-bottom: 10px;
         }
 
             .lists .lists_list li h1{
                 font-family: var(--font1);
-                font-size: 10px;
+                font-size: 15px;
             }
             .lists .lists_list li h2{
                 font-family: var(--font3);
-                font-size: 10px;
+                font-size: 15px;
             }
 
     @media (max-width: 800px) {
