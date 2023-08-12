@@ -111,7 +111,7 @@
     .lists .lists_title {
         padding: 5%;
         color: black;
-        font-family: var(--font3);
+        font-family: var(--font1);
         background-color: white;
         cursor: pointer;
         position: relative;
@@ -136,10 +136,14 @@
         background-color: white;
     }
 
+        .lists .lists_list p {
+            font-weight: bold;
+        }
         .lists .lists_list p, .lists .lists_list li {
             font-family: var(--font3);
             margin-bottom: 10px;
         }
+
 
             .lists .lists_list li h1{
                 font-family: var(--font1);
