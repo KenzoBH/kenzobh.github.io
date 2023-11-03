@@ -30,8 +30,13 @@ header {
     height: 10vh;
     width: 100%;
     display: flex;
-    background: #000000AA;
+    background: transparent;
+    transition: 0.3s;
     font-family: var(--font2);
+}
+
+header.scrolled {
+    background: #000000AA;
 }
 
     header #home {
