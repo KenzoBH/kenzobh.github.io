@@ -102,7 +102,7 @@ html {
     }
 
 #resume {
-    margin: 80px 200px;
+    padding: 80px 200px;
 }
 
 @media (max-width: 800px) {
