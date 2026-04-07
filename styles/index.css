@@ -182,3 +182,57 @@ html {
     #resume a:hover {
         text-decoration: underline;
     }
+
+
+
+#playlists {
+    padding: 100px 200px 0px 200px;
+    display: flex;
+    background-color: black;
+    color: white;
+}
+
+    #playlistsplayer {
+        display: flex;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 300px;
+    }
+
+    @media (max-width: 800px) {
+        #playlists {
+            display: block;
+            padding: 30px;
+        }
+
+        #playlists p {
+            font-family: var(--font3);
+            font-size: 0.9em;
+            text-align: justify;
+        }
+
+
+        #playlists #playliststitle {
+            width: 100%;
+        }
+        #playlists #playliststitle h2 {
+            font-size: 150%;
+        }
+        #playlists #playliststitle p {
+            font-size: 80%;
+        }
+        #playlists #playliststitle li {
+            font-size: 80%;
+        }
+        #playlists #playliststitle a {
+            font-size: 120%;
+        }
+
+        #playlists #playlistsplayer {
+            width: 100%;
+        }
+    }
+

@@ -20,7 +20,6 @@ function footer(){
                     <div>\
                         <h2>Bruno Kenzo Hyodo</h2>\
                         <p>\
-                            Shopee BR & USP<br>\
                             São Paulo, Brazil<br>\
                             ${getAge()} yo\
                         </p>\
