@@ -190,6 +190,7 @@ html {
     display: flex;
     background-color: black;
     color: white;
+    font-family: var(--font3);
 }
 
     #playlistsplayer {
@@ -213,7 +214,6 @@ html {
             font-size: 0.9em;
             text-align: justify;
         }
-
 
         #playlists #playliststitle {
             width: 100%;
