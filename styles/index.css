@@ -297,7 +297,8 @@ ol, ul#others-list {
             width: 100%;
         }
 
-            #books #books-list ul {
+            #books #books-list ul,
+            #books #books-list details.places ul {
                 grid-template-columns: 1fr;
                 gap: 22px;
             }
