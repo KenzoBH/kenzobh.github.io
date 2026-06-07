@@ -76,7 +76,7 @@ header.scrolled {
         }
 
         #hero #title p {
-            color: var(--body);
+            color: white;
             text-align: left;
             font-family: var(--font3);
             font-weight: 300;
