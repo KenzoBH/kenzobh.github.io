@@ -1,21 +1,4 @@
-html {
-    scroll-behavior: smooth;
-}
-
-:root {
-    --blue: #4392f1;
-    --grey: #fafafa;
-    --font1: "Oswald";
-    --font2: "Montserrat";
-    --font3: "Roboto";
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    text-decoration: none;
-}
+/* index.css — home page sections: hero backdrop, about, bookshelf, playlists. */
 
 #hero {
     background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,1)), url(../images/background-index.png);
@@ -23,105 +6,152 @@ html {
     background-size: cover;
 }
 
+/* ---------- Section labels (left column) ---------- */
+
+#actual #actual-title h2,
+#books #books-title h2 {
+    font-family: var(--font1);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 1.4rem;
+    color: white;
+}
+
+/* ---------- About ---------- */
+
 #actual {
     display: flex;
-    padding-top: 100px;
-    padding-bottom: 80px;
+    gap: 50px;
+    padding: var(--section_padding) var(--horizontal_margin);
     background: black;
     color: white;
 }
 
     #actual #actual-title {
-        line-height: 25px;
-        margin-left: 200px;
-        width: 50%;
+        width: 28%;
     }
 
-        #actual #actual-title h2 {
-            font-family: var(--font1);
-        } 
-
     #actual #actual-list {
-        margin-right: 200px;
-        text-align: justify; 
+        width: 72%;
     }
 
         #actual #actual-list li {
-            padding-bottom: 25px;
+            padding-bottom: 42px;
+            text-align: justify;
+        }
+
+        #actual #actual-list li:last-child {
+            padding-bottom: 0;
         }
 
             #actual #actual-list li h3 {
                 font-family: var(--font2);
+                font-weight: 600;
+                font-size: 1.15rem;
             }
 
-                #actual #actual-list li h3 a {
-                    color: white;
-                    font-size: 150%;
-                    transition: 0.2s;
-                }
-
-                #actual #actual-list li h3 a:hover {
-                    color: var(--blue);
-                    text-decoration: underline;
-                    transition: 0.2s
-                }
-            
             #actual #actual-list li h4 {
-                font-family: var(--font2);
+                font-family: var(--font3);
+                font-weight: 400;
                 color: var(--blue);
+                font-size: 0.9rem;
+                margin: 4px 0 12px;
             }
 
             #actual #actual-list li p {
                 font-family: var(--font3);
+                font-weight: 300;
+                color: var(--body);
+                line-height: 1.7;
+                font-size: 0.95rem;
+            }
+
+/* ---------- Bookshelf ---------- */
+
+#books {
+    display: flex;
+    gap: 50px;
+    padding: var(--section_padding) var(--horizontal_margin);
+    background: black;
+    color: white;
+}
+
+    #books #books-title {
+        width: 28%;
+    }
+
+    #books #books-list {
+        width: 72%;
+    }
+
+        #books #books-list ul {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 28px 40px;
+        }
+
+            #books #books-list li h3 {
+                font-family: var(--font2);
+                font-weight: 600;
+                font-size: 0.95rem;
+                line-height: 1.3;
+            }
+
+            #books #books-list li h4 {
+                font-family: var(--font3);
+                font-weight: 300;
+                color: var(--muted);
+                font-size: 0.85rem;
+                margin-top: 3px;
+            }
+
+            #books #books-list li dt {
+                font-family: var(--font3);
+                font-size: 0.75rem;
+                color: var(--blue);
                 margin-top: 5px;
             }
 
-    #actual #actual-list {
-        width: 50%;
-    }
+/* ---------- Playlists ---------- */
 
-    @media (max-width: 800px) {
-        #actual {
-            display: block;
-        }
-        
-        #actual #actual-title {
-            width: 80%;
-            margin-bottom: 20px;
-            margin-left: 30px;
-        }
-        
-        #actual #actual-list {
-            width: 100%;
-        }
-
-            #actual #actual-list ul {
-                font-size: 80%;
-                padding: 0 30px;
-            }
-    }
-
-#resume {
-    padding: 80px 0 80px 0;
-    margin: 0px 200px 0px 200px;
+#playlists {
+    padding: var(--section_padding) var(--horizontal_margin);
+    background: black;
+    color: white;
+    font-family: var(--font3);
 }
 
-@media (max-width: 800px) {
+    #playlists p {
+        font-weight: 300;
+        color: var(--muted);
+        margin-bottom: 28px;
+    }
+
+    #playlists br {
+        display: none;
+    }
+
+    #playlistsplayer {
+        width: 100%;
+        height: 320px;
+    }
+
+/* ---------- Resume (shared) ---------- */
+
+ol, ul#others-list {
+    list-style-type: none;
+}
+
     #resume {
-        margin: 80px 30px;
-        text-align: justify;
-    }
-}
-
-    ol, ul#others-list {
-        list-style-type: none;
+        padding: var(--section_padding) var(--horizontal_margin);
     }
 
         #resume h2 {
             font-family: var(--font1);
             margin-top: 30px;
             margin-bottom: 20px;
-            border-bottom: grey 1px solid;
+            border-bottom: rgba(255,255,255,0.15) 1px solid;
         }
 
         #resume h3 {
@@ -143,7 +173,7 @@ html {
     .time {
         display: flex;
         text-align: right;
-        color: grey;
+        color: var(--muted);
         font-size: 80%;
     }
 
@@ -178,61 +208,40 @@ html {
     #resume a {
         color: var(--blue)
     }
-    
+
     #resume a:hover {
         text-decoration: underline;
     }
 
+/* ---------- Responsive ---------- */
 
+@media (max-width: 800px) {
+    :root {
+        --section_padding: 70px;
+    }
 
-#playlists {
-    padding: 100px 200px 0px 200px;
-    display: flex;
-    background-color: black;
-    color: white;
-    font-family: var(--font3);
-}
+    #actual,
+    #books {
+        display: block;
+    }
+
+        #actual #actual-title,
+        #books #books-title {
+            width: 100%;
+            margin-bottom: 28px;
+        }
+
+        #actual #actual-list,
+        #books #books-list {
+            width: 100%;
+        }
+
+            #books #books-list ul {
+                grid-template-columns: 1fr;
+                gap: 22px;
+            }
 
     #playlistsplayer {
-        display: flex;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        width: 100%;
-        height: 300px;
+        height: 240px;
     }
-
-    @media (max-width: 800px) {
-        #playlists {
-            display: block;
-            padding: 30px;
-        }
-
-        #playlists p {
-            font-family: var(--font3);
-            font-size: 0.9em;
-            text-align: justify;
-        }
-
-        #playlists #playliststitle {
-            width: 100%;
-        }
-        #playlists #playliststitle h2 {
-            font-size: 150%;
-        }
-        #playlists #playliststitle p {
-            font-size: 80%;
-        }
-        #playlists #playliststitle li {
-            font-size: 80%;
-        }
-        #playlists #playliststitle a {
-            font-size: 120%;
-        }
-
-        #playlists #playlistsplayer {
-            width: 100%;
-        }
-    }
-
+}

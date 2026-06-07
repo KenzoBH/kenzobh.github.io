@@ -1,0 +1,40 @@
+/* base.css — shared design tokens, reset, and global elements.
+   Loaded first on every page; component stylesheets build on top. */
+
+:root {
+    /* color */
+    --blue: #4392f1;
+    --grey: #fafafa;
+    --muted: #9b9b9b;
+    --body: #c4c4c4;
+
+    /* type */
+    --font1: "Oswald";
+    --font2: "Montserrat";
+    --font3: "Roboto";
+
+    /* layout */
+    --horizontal_margin: 7.5%;
+    --section_padding: 130px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    color: white;
+    transition: 0.2s;
+}
+
+a:hover {
+    color: var(--blue);
+}

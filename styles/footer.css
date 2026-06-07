@@ -1,12 +1,6 @@
-:root {
-    --blue: #4392f1;
-    --grey: #fafafa;
-    --font1: "Oswald";
-    --font2: "Montserrat";
-    --font3: "Roboto";
-}
+/* footer.css — shared site footer (rendered by footer.js). */
 
-#footer-box {   
+#footer-box {
     background: black;
     height: 100%;
 }
@@ -15,24 +9,29 @@
     padding-top: 100px;
     color: white;
     font-family: var(--font3);
+    border-top: rgba(255, 255, 255, 0.08) 1px solid;
 }
 
     #footer #footer-infos {
-        padding-left: 200px;
+        padding-left: var(--horizontal_margin);
     }
 
         #footer #footer-infos h2 {
             font-family: var(--font1);
-            font-size: 300%;
-            margin-bottom: 30px;
+            font-size: 240%;
+            letter-spacing: 1px;
+            margin-bottom: 24px;
         }
 
         #footer #footer-icons {
             margin-left: -10px;
+            margin-top: 8px;
         }
 
             #footer #footer-infos p {
-                line-height: 150%;
+                line-height: 1.7;
+                color: var(--body);
+                font-weight: 300;
             }
 
             #footer #footer-icons .fa {
@@ -58,6 +57,7 @@
 
 #footer-date {
     text-align: center;
-    padding: 100px 0 50px 0;
-    color: grey;
+    padding: 90px 0 50px 0;
+    color: var(--muted);
+    font-size: 90%;
 }

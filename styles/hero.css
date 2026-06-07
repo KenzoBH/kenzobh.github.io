@@ -1,28 +1,4 @@
-:root {
-    --blue: #4392f1;
-    --grey: #fafafa;
-    --font1: "Oswald";
-    --font2: "Montserrat";
-    --font3: "Roboto";
-    --horizontal_margin: 7.5%;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    text-decoration: none;
-}
-
-a {
-    color: white;
-    transition: 0.2s
-}
-
-a:hover {
-    color: var(--blue);
-    transition: 0.2s;
-}
+/* hero.css — fixed header and full-screen hero. */
 
 header {
     z-index: 1;
@@ -36,7 +12,8 @@ header {
 }
 
 header.scrolled {
-    background: #000000AA;
+    background: rgba(0, 0, 0, 0.65);
+    backdrop-filter: blur(8px);
 }
 
     header #home {
@@ -46,6 +23,7 @@ header.scrolled {
         transform: translateY(-50%);
         position: absolute;
         font-size: 150%;
+        letter-spacing: 0.5px;
     }
 
     header #pages {
@@ -59,7 +37,9 @@ header.scrolled {
 
         header #pages li {
             text-align: center;
-            margin-left: 2vh;
+            margin-left: 2.5vh;
+            font-size: 90%;
+            letter-spacing: 0.5px;
         }
 
     @media (max-width: 800px) {
@@ -90,20 +70,25 @@ header.scrolled {
         #hero #title h1 {
             color: white;
             font-family: var(--font1);
+            font-size: 3.4rem;
+            letter-spacing: 1px;
+            margin-bottom: 18px;
         }
 
         #hero #title p {
-            color: white;
+            color: var(--body);
             text-align: left;
             font-family: var(--font3);
+            font-weight: 300;
+            line-height: 1.8;
         }
 
     #hero #contact {
         bottom: 0;
         position: absolute;
         width: 85%; /* 100% - 2*horizontal_margin */
-        padding: 40px 0;
-        border-top: var(--blue) 2px solid;
+        padding: 36px 0;
+        border-top: rgba(255, 255, 255, 0.15) 1px solid;
         font-family: var(--font2);
     }
 
@@ -115,6 +100,7 @@ header.scrolled {
             #hero #contact ul li {
                 padding: 0 10%;
                 font-size: 80%;
+                letter-spacing: 0.5px;
             }
 
                 #hero #contact ul li p {
@@ -123,14 +109,14 @@ header.scrolled {
 
     @media (max-width: 800px) {
         #hero #title h1 {
-            font-size: 170%;
+            font-size: 2.2rem;
         }
         #hero #title p {
             font-size: 80%;
         }
         #hero #contact {
             padding: 7.5px 0;
-        }   
+        }
         #hero #contact ul {
             display: block;
         }
